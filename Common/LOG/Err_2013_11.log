@@ -1,0 +1,57 @@
+07/11/2013 16:01:02 | 
+07/11/2013 16:01:02 | 
+Message : The process cannot access the file 'C:\Users\VirtualUserDev\AppData\Local\Temp\openElement\ImgOptim\slide5.png' because it is being used by another process.
+07/11/2013 16:01:02 | 
+LastTrace : openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError)
+07/11/2013 16:01:02 | 
+Params : 
+07/11/2013 16:01:02 | 
+MethodeName : Void WinIOError(Int32, System.String)
+07/11/2013 16:01:02 | 
+Stamp : 07/11/2013 16:01:01
+07/11/2013 16:01:02 | 
+OSFullName : Microsoft Windows 7 Édition Intégrale 
+07/11/2013 16:01:02 | 
+AvailablePhysicalMemory : 932,38 Mo 
+07/11/2013 16:01:02 | 
+TotalPhysicalMemory : 3 Go 
+07/11/2013 16:01:02 | 
+AvailableVirtualMemory : 1,08 Go 
+07/11/2013 16:01:02 | 
+TotalVirtualMemory : 2 Go 
+07/11/2013 16:01:02 | 
+WorkingSet : 549,12 Mo 
+07/11/2013 16:01:02 | 
+PagedMemorySize : 530,61 Mo 
+07/11/2013 16:01:02 | 
+TotalMemory : 86,61 Mo 
+07/11/2013 16:01:02 | 
+
+07/11/2013 16:01:02 | 
+ExTrace : 
+07/11/2013 16:01:02 | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\Class\Common\OBitmap.vb:line 150
+07/11/2013 16:01:02 | 
+
+07/11/2013 16:01:02 | 
+OETrace : 
+07/11/2013 16:01:02 | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\Class\Common\OBitmap.vb:line 180
+07/11/2013 16:01:02 | 
+at openElement.Tools.Picture.OpenBitmap2(String filePath, PictureResizeConfig resizeConfig, String groupName, String element, Boolean showLoadError) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\Tools\ToolsPicture.vb:line 108
+07/11/2013 16:01:02 | 
+at openElement.Tools.Picture.OpenBitmap2(String filePath, String groupName) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\Tools\ToolsPicture.vb:line 125
+07/11/2013 16:01:02 | 
+at openElement.WebElement.Editors.Form.FrmBackgroundImage.UpdateValue() in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\WebElement\Editors\Form\FrmBackgroundImage.vb:line 20
+07/11/2013 16:01:02 | 
+at openElement.WebElement.Editors.Form.FrmBackgroundImage.set_ImagePath(String value) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\WebElement\Editors\Form\FrmBackgroundImage.vb:line 15
+07/11/2013 16:01:02 | 
+at openElement.WebElement.Editors.Form.FrmBackgroundImage.SBUpdate_Click(Object sender, EventArgs e) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\WebElement\Editors\Form\FrmBackgroundImage.vb:line 50
+07/11/2013 16:01:02 | 
+at openElement.WebElement.Editors.UITypeLinkFileSkin.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\VirtualUserDev\Documents\Visual Studio 2008\Projects\App\OpenElement\openElement\WebElement\Editors\UITypeLinkFileSkin.vb:line 43
+07/11/2013 16:01:02 | 
+at openElement.My.MyApplication.Main(String[] Args) in 17d14f5c-a337-4978-8281-53493378c1071.vb:line 81
+07/11/2013 16:01:02 | 
+
+07/11/2013 16:01:02 | 
+------------------

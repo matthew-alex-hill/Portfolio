@@ -1,0 +1,6 @@
+1. Menu container: create, change dimensions of top container, keep cmall logo while menu open
+2. Central containers: minimum size, enlarge to take screen, keep subcontainer in the center
+3. Subcontainer: may contains sub2 with relative content
+4. Sub2: analyse summary min-width of relative content elements, if too small change to show one under another
++5. $('.OEWEPanel).foreach(function(){ var overflow = $(this).css('overflow'); if (overflow) $(this).find('div.OECT:first').css('overflow', overflow); });
+6. Menu Arrow - on change status

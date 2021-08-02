@@ -1,0 +1,385 @@
+8/2/2021 10:02:47 PM | Debut Mise en ligne complete (Site):
+8/2/2021 10:02:56 PM | Listing terminé :
+8/2/2021 10:02:56 PM | 
+
+8/2/2021 10:02:56 PM | * Files/Fonts-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Other-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Xml-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Server-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Server/language-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/DBTools-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Server/class-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Other-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Image-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Font-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/EG-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Css-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Css/v02-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Css/v01-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Client-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/Plugins-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Client/Common-- -- --Folder create
+8/2/2021 10:02:56 PM | * Templates-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Video-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Other-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Media-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Image-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Fonts-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Flash-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files/Audio-- -- --Folder create
+8/2/2021 10:02:56 PM | * Data-- -- --Folder create
+8/2/2021 10:02:56 PM | * Backup-- -- --Folder create
+8/2/2021 10:02:56 PM | * Common-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin-- -- --Folder create
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files\Other-- -- --Folder create
+8/2/2021 10:02:56 PM | * Files\Fonts-- -- --Folder create
+8/2/2021 10:02:56 PM | * Backup/.htaccess-- -- --33
+8/2/2021 10:02:56 PM | * Data/.htaccess-- -- --13
+8/2/2021 10:02:56 PM | * WEFiles/Client/Common/oe.min.js-- -- --16317
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/Plugins/jquery.form.js-- -- --11659
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/Plugins/jquery.ui.core.js-- -- --19590
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/Plugins/jquery.ui.effects.js-- -- --25199
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/1.10.2.js-- -- --93107
+8/2/2021 10:02:56 PM | * WEFiles/Client/jQuery/migrate.js-- -- --7202
+8/2/2021 10:02:56 PM | * WEFiles/Client/OEDB.js-- -- --1856
+8/2/2021 10:02:56 PM | * WEFiles/Client/OEDBClasses.js-- -- --2280
+8/2/2021 10:02:56 PM | * WEFiles/Client/opentip-jquery.min.js-- -- --44974
+8/2/2021 10:02:56 PM | * WEFiles/Css/v01/openElement.css-- -- --5851
+8/2/2021 10:02:56 PM | * WEFiles/Css/v02/openElement.css-- -- --6102
+8/2/2021 10:02:56 PM | * WEFiles/Css/v02/openElement.int.css-- -- --6177
+8/2/2021 10:02:56 PM | * WEFiles/Css/ie7.css-- -- --833
+8/2/2021 10:02:56 PM | * WEFiles/Css/opentip.css-- -- --9211
+8/2/2021 10:02:56 PM | * WEFiles/Image/Code.png-- -- --831
+8/2/2021 10:02:56 PM | * WEFiles/Image/delete.png-- -- --1465
+8/2/2021 10:02:56 PM | * WEFiles/Image/empty.png-- -- --184
+8/2/2021 10:02:56 PM | * WEFiles/Image/information2.png-- -- --3246
+8/2/2021 10:02:56 PM | * WEFiles/Image/loading.gif-- -- --1924
+8/2/2021 10:02:56 PM | * WEFiles/Image/Loading2.gif-- -- --4941
+8/2/2021 10:02:56 PM | * WEFiles/Image/mask.png-- -- --213
+8/2/2021 10:02:56 PM | * WEFiles/Image/ModalBackgound.png-- -- --27145
+8/2/2021 10:02:56 PM | * WEFiles/Image/ModalPopupBlock.png-- -- --268
+8/2/2021 10:02:56 PM | * WEFiles/Image/ServerError.png-- -- --2602
+8/2/2021 10:02:56 PM | * WEFiles/Image/warning.png-- -- --816
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEW3C.png-- -- --1882
+8/2/2021 10:02:56 PM | * WEFiles/Server/class/class-phpmailer.php-- -- --65668
+8/2/2021 10:02:56 PM | * WEFiles/Server/class/class-smtp.php-- -- --32456
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/DBTools/OEDataContainers.php-- -- --57685
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/DBTools/OEDBRequest.php-- -- --36412
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/DBTools/OEDynUtils.php-- -- --15107
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/.htaccess-- -- --13
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/OEDB.php-- -- --28741
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/OEDBClasses.php-- -- --84483
+8/2/2021 10:02:56 PM | * WEFiles/Server/DB/sqllogin.php-- -- --1479
+8/2/2021 10:02:56 PM | * WEFiles/Server/language/phpmailer.lang-en.php-- -- --1188
+8/2/2021 10:02:56 PM | * WEFiles/Server/language/phpmailer.lang-fr.php-- -- --1297
+8/2/2021 10:02:56 PM | * WEFiles/Server/openElement.php-- -- --13870
+8/2/2021 10:02:56 PM | * WEFiles/Server/VarText.php-- -- --4496
+8/2/2021 10:02:56 PM | * Files/Other/FM Autochess Game Plan.pdf-- -- --119551
+8/2/2021 10:02:56 PM | * Files/Fonts/Fonts.css-- -- --1556
+8/2/2021 10:02:56 PM | * .htaccess-- -- --0
+8/2/2021 10:02:56 PM | * Animation.css-- -- --9363
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/e1defe9e.png-- -- --554
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/f72ffa6d.png-- -- --348
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/0db815a6.png-- -- --348
+8/2/2021 10:02:56 PM | * WEFiles/Image/Flag_DEFAULT.png-- -- --782
+8/2/2021 10:02:56 PM | * WEFiles/Image/Flag_FR.png-- -- --771
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/23baf6c8.png-- -- --520
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/962e1fc1.png-- -- --477
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/f43c7602.png-- -- --90
+8/2/2021 10:02:56 PM | * Files/Image/Slide1-trait-separation.png-- -- --268
+8/2/2021 10:02:56 PM | * Files/Image/yt white.png-- -- --6459
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/dc555665.png-- -- --1363
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/ebc9774e.png-- -- --1600
+8/2/2021 10:02:56 PM | * Animation.htm-- -- --31795
+8/2/2021 10:02:56 PM | * Games.css-- -- --9680
+8/2/2021 10:02:56 PM | * Files/Image/Voder game controls.png-- -- --245696
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/Voder game controls-WE1b42ee79d1.png-- -- --64640
+8/2/2021 10:02:56 PM | * Files/Image/Mock Interface Final.png-- -- --2471585
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/Mock Interface Final-WEfbf20da677.png-- -- --566280
+8/2/2021 10:02:56 PM | * Files/Image/FM Autochess UI.png-- -- --256339
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/FM Autochess UI-WE19764eafc0.png-- -- --138323
+8/2/2021 10:02:56 PM | * Games.htm-- -- --29323
+8/2/2021 10:02:56 PM | * index(var).js-- -- --1312
+8/2/2021 10:02:56 PM | * index(var).php-- -- --1882
+8/2/2021 10:02:56 PM | * index.css-- -- --9544
+8/2/2021 10:02:56 PM | * Files/Image/clock pile noiseless2.png-- -- --2756877
+8/2/2021 10:02:56 PM | * Files/Image/585 high quality.png-- -- --1112266
+8/2/2021 10:02:56 PM | * Files/Image/Noiseless scenepng.png-- -- --1002082
+8/2/2021 10:02:56 PM | * Files/Image/gh unselected.png-- -- --2745
+8/2/2021 10:02:56 PM | * Files/Image/li unselected.png-- -- --15336
+8/2/2021 10:02:56 PM | * Files/Image/yt unselected.png-- -- --24784
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/1a2d3739.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/27ffe030.png-- -- --1652
+8/2/2021 10:02:56 PM | * WEFiles/Server/WESendMail-v210.php-- -- --12362
+8/2/2021 10:02:56 PM | * WEFiles/Client/WESendMail-v210.js-- -- --3670
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/f4da6582.png-- -- --229
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/00bff3bd.png-- -- --223
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/c92e726e.png-- -- --230
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/1ccc25ab.png-- -- --266
+8/2/2021 10:02:56 PM | * index.htm-- -- --42095
+8/2/2021 10:02:56 PM | * Music.css-- -- --8143
+8/2/2021 10:02:56 PM | * Files/Audio/17035_1461336966.mp3-- -- --25076
+8/2/2021 10:02:56 PM | * Music.htm-- -- --27757
+8/2/2021 10:02:56 PM | * Programs.css-- -- --8310
+8/2/2021 10:02:56 PM | * Files/Image/transupposer screenshot 2.png-- -- --84882
+8/2/2021 10:02:56 PM | * Files/Image/isometric3.png-- -- --628525
+8/2/2021 10:02:56 PM | * Files/Image/pandemic.gif-- -- --7211127
+8/2/2021 10:02:56 PM | * Files/Image/phone render.png-- -- --1616881
+8/2/2021 10:02:56 PM | * Programs.htm-- -- --24829
+8/2/2021 10:02:56 PM | * Renders.css-- -- --12774
+8/2/2021 10:02:56 PM | * Files/Image/kitchen.png-- -- --748402
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/kitchen-WE5c47a3fe15.png-- -- --333008
+8/2/2021 10:02:56 PM | * Files/Image/croydon subway final.png-- -- --1568285
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/croydon subway final-WEdf788de758.png-- -- --331964
+8/2/2021 10:02:56 PM | * Files/Image/pembridge memories.png-- -- --2423779
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/pembridge memories-WE5679570323.png-- -- --161878
+8/2/2021 10:02:56 PM | * Files/Image/first chair.png-- -- --3580223
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/first chair-WE0d6839d27e.png-- -- --261008
+8/2/2021 10:02:56 PM | * Files/Image/chair tutorial final.png-- -- --1291920
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/chair tutorial final-WE96bcc15abd.png-- -- --193279
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/isometric3-WE74a5399680.png-- -- --260380
+8/2/2021 10:02:56 PM | * WEFiles/Image/WEImage/phone render-WE13122a93ab.png-- -- --296395
+8/2/2021 10:02:56 PM | * Renders.htm-- -- --32747
+8/2/2021 10:02:56 PM | * robots.txt-- -- --19
+8/2/2021 10:02:56 PM | * SAMPLE(var).php-- -- --314
+8/2/2021 10:02:56 PM | * SAMPLE.css-- -- --17300
+8/2/2021 10:02:56 PM | * Files/Image/icone-demo.png-- -- --16324
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/fd65299b.jpg-- -- --9952
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/d948ce83.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/88cbd4d4.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/ac543dc2.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/deb8b244.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/2a3f2740.png-- -- --930
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/4d302d5a.png-- -- --1164
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/1ea4693c.png-- -- --1325
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/89ed3aad.png-- -- --1040
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/ab4ef622.jpg-- -- --9952
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/23fa532d.jpg-- -- --9952
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/5e7a93a0.png-- -- --2093
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/d20caab5.png-- -- --1564
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/a2d6e7ec.png-- -- --1978
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/a4748c8c.png-- -- --90
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/26c70838.png-- -- --193
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/58294202.png-- -- --825
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/cbb1ae94.png-- -- --193
+8/2/2021 10:02:56 PM | * WEFiles/Image/Skin/966687aa.png-- -- --825
+8/2/2021 10:02:56 PM | * SAMPLE.htm-- -- --51058
+8/2/2021 10:02:56 PM | * sitemap.xml-- -- --1221
+8/2/2021 10:02:56 PM | * Files/Other/FM Autochess Game Plan.pdf-- -- --119551
+8/2/2021 10:02:56 PM | * Files/Fonts/Domestic Manners.eot-- -- --61388
+8/2/2021 10:02:56 PM | * Files/Fonts/Domestic Manners.ttf-- -- --61128
+8/2/2021 10:02:56 PM | * Files/Fonts/Domestic Manners.woff-- -- --34672
+8/2/2021 10:02:56 PM | * Files/Fonts/Fonts.css-- -- --1556
+8/2/2021 10:02:56 PM | * Files/Fonts/GeosansLight.eot-- -- --60242
+8/2/2021 10:02:56 PM | * Files/Fonts/GeosansLight.ttf-- -- --60072
+8/2/2021 10:02:56 PM | * Files/Fonts/GeosansLight.woff-- -- --32304
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans Light.eot-- -- --42150
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans Light.ttf-- -- --41936
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans Light.woff-- -- --22868
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans.eot-- -- --42790
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans.ttf-- -- --42600
+8/2/2021 10:02:56 PM | * Files/Fonts/Open Sans.woff-- -- --23520
+8/2/2021 10:02:56 PM | * Templates/Base_MenuRetractable.css-- -- --6735
+8/2/2021 10:02:56 PM | * Templates/Base_Scripts.css-- -- --696
+8/2/2021 10:02:57 PM | 
+8/2/2021 10:02:57 PM | 
+--------------------------------Phase 1 Terminé--------------------------------
+8/2/2021 10:02:57 PM | 
+
+8/2/2021 10:03:38 PM | Debut Mise en ligne complete (Site):
+8/2/2021 10:03:43 PM | Listing terminé :
+8/2/2021 10:03:43 PM | 
+
+8/2/2021 10:03:43 PM | * Files/Fonts-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Other-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Xml-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Server-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Server/language-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/DBTools-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Server/class-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Other-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Image-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Font-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/EG-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Css-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Css/v02-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Css/v01-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Client-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/Plugins-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Client/Common-- -- --Folder create
+8/2/2021 10:03:43 PM | * Templates-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Video-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Other-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Media-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Image-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Fonts-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Flash-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files/Audio-- -- --Folder create
+8/2/2021 10:03:43 PM | * Data-- -- --Folder create
+8/2/2021 10:03:43 PM | * Backup-- -- --Folder create
+8/2/2021 10:03:43 PM | * Common-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin-- -- --Folder create
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files\Other-- -- --Folder create
+8/2/2021 10:03:43 PM | * Files\Fonts-- -- --Folder create
+8/2/2021 10:03:43 PM | * Backup/.htaccess-- -- --33
+8/2/2021 10:03:43 PM | * Data/.htaccess-- -- --13
+8/2/2021 10:03:43 PM | * WEFiles/Client/Common/oe.min.js-- -- --16317
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/Plugins/jquery.form.js-- -- --11659
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/Plugins/jquery.ui.core.js-- -- --19590
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/Plugins/jquery.ui.effects.js-- -- --25199
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/1.10.2.js-- -- --93107
+8/2/2021 10:03:43 PM | * WEFiles/Client/jQuery/migrate.js-- -- --7202
+8/2/2021 10:03:43 PM | * WEFiles/Client/OEDB.js-- -- --1856
+8/2/2021 10:03:43 PM | * WEFiles/Client/OEDBClasses.js-- -- --2280
+8/2/2021 10:03:43 PM | * WEFiles/Client/opentip-jquery.min.js-- -- --44974
+8/2/2021 10:03:43 PM | * WEFiles/Css/v01/openElement.css-- -- --5851
+8/2/2021 10:03:43 PM | * WEFiles/Css/v02/openElement.css-- -- --6102
+8/2/2021 10:03:43 PM | * WEFiles/Css/v02/openElement.int.css-- -- --6177
+8/2/2021 10:03:43 PM | * WEFiles/Css/ie7.css-- -- --833
+8/2/2021 10:03:43 PM | * WEFiles/Css/opentip.css-- -- --9211
+8/2/2021 10:03:43 PM | * WEFiles/Image/Code.png-- -- --831
+8/2/2021 10:03:43 PM | * WEFiles/Image/delete.png-- -- --1465
+8/2/2021 10:03:43 PM | * WEFiles/Image/empty.png-- -- --184
+8/2/2021 10:03:43 PM | * WEFiles/Image/information2.png-- -- --3246
+8/2/2021 10:03:43 PM | * WEFiles/Image/loading.gif-- -- --1924
+8/2/2021 10:03:43 PM | * WEFiles/Image/Loading2.gif-- -- --4941
+8/2/2021 10:03:43 PM | * WEFiles/Image/mask.png-- -- --213
+8/2/2021 10:03:43 PM | * WEFiles/Image/ModalBackgound.png-- -- --27145
+8/2/2021 10:03:43 PM | * WEFiles/Image/ModalPopupBlock.png-- -- --268
+8/2/2021 10:03:43 PM | * WEFiles/Image/ServerError.png-- -- --2602
+8/2/2021 10:03:43 PM | * WEFiles/Image/warning.png-- -- --816
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEW3C.png-- -- --1882
+8/2/2021 10:03:43 PM | * WEFiles/Server/class/class-phpmailer.php-- -- --65668
+8/2/2021 10:03:43 PM | * WEFiles/Server/class/class-smtp.php-- -- --32456
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/DBTools/OEDataContainers.php-- -- --57685
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/DBTools/OEDBRequest.php-- -- --36412
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/DBTools/OEDynUtils.php-- -- --15107
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/.htaccess-- -- --13
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/OEDB.php-- -- --28741
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/OEDBClasses.php-- -- --84483
+8/2/2021 10:03:43 PM | * WEFiles/Server/DB/sqllogin.php-- -- --1479
+8/2/2021 10:03:43 PM | * WEFiles/Server/language/phpmailer.lang-en.php-- -- --1188
+8/2/2021 10:03:43 PM | * WEFiles/Server/language/phpmailer.lang-fr.php-- -- --1297
+8/2/2021 10:03:43 PM | * WEFiles/Server/openElement.php-- -- --13870
+8/2/2021 10:03:43 PM | * WEFiles/Server/VarText.php-- -- --4496
+8/2/2021 10:03:43 PM | * .htaccess-- -- --0
+8/2/2021 10:03:43 PM | * Animation.css-- -- --9363
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/e1defe9e.png-- -- --554
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/f72ffa6d.png-- -- --348
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/0db815a6.png-- -- --348
+8/2/2021 10:03:43 PM | * WEFiles/Image/Flag_DEFAULT.png-- -- --782
+8/2/2021 10:03:43 PM | * WEFiles/Image/Flag_FR.png-- -- --771
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/23baf6c8.png-- -- --520
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/962e1fc1.png-- -- --477
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/f43c7602.png-- -- --90
+8/2/2021 10:03:43 PM | * Files/Image/Slide1-trait-separation.png-- -- --268
+8/2/2021 10:03:43 PM | * Files/Image/yt white.png-- -- --6459
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/dc555665.png-- -- --1363
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/ebc9774e.png-- -- --1600
+8/2/2021 10:03:43 PM | * Animation.htm-- -- --31795
+8/2/2021 10:03:43 PM | * Games.css-- -- --9680
+8/2/2021 10:03:43 PM | * Files/Other/FM Autochess Game Plan.pdf-- -- --119551
+8/2/2021 10:03:43 PM | * Files/Image/Voder game controls.png-- -- --245696
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/Voder game controls-WE1b42ee79d1.png-- -- --64640
+8/2/2021 10:03:43 PM | * Files/Image/Mock Interface Final.png-- -- --2471585
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/Mock Interface Final-WEfbf20da677.png-- -- --566280
+8/2/2021 10:03:43 PM | * Files/Image/FM Autochess UI.png-- -- --256339
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/FM Autochess UI-WE19764eafc0.png-- -- --138323
+8/2/2021 10:03:43 PM | * Games.htm-- -- --29323
+8/2/2021 10:03:43 PM | * index(var).js-- -- --1312
+8/2/2021 10:03:43 PM | * index(var).php-- -- --1884
+8/2/2021 10:03:43 PM | * index.css-- -- --9544
+8/2/2021 10:03:43 PM | * Files/Image/clock pile noiseless2.png-- -- --2756877
+8/2/2021 10:03:43 PM | * Files/Image/585 high quality.png-- -- --1112266
+8/2/2021 10:03:43 PM | * Files/Image/Noiseless scenepng.png-- -- --1002082
+8/2/2021 10:03:43 PM | * Files/Image/gh unselected.png-- -- --2745
+8/2/2021 10:03:43 PM | * Files/Image/li unselected.png-- -- --15336
+8/2/2021 10:03:43 PM | * Files/Image/yt unselected.png-- -- --24784
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/1a2d3739.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/27ffe030.png-- -- --1652
+8/2/2021 10:03:43 PM | * WEFiles/Server/WESendMail-v210.php-- -- --12362
+8/2/2021 10:03:43 PM | * WEFiles/Client/WESendMail-v210.js-- -- --3670
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/f4da6582.png-- -- --229
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/00bff3bd.png-- -- --223
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/c92e726e.png-- -- --230
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/1ccc25ab.png-- -- --266
+8/2/2021 10:03:43 PM | * index.htm-- -- --42095
+8/2/2021 10:03:43 PM | * Music.css-- -- --8143
+8/2/2021 10:03:43 PM | * Files/Audio/17035_1461336966.mp3-- -- --25076
+8/2/2021 10:03:43 PM | * Music.htm-- -- --27757
+8/2/2021 10:03:43 PM | * Programs.css-- -- --8310
+8/2/2021 10:03:43 PM | * Files/Image/transupposer screenshot 2.png-- -- --84882
+8/2/2021 10:03:43 PM | * Files/Image/isometric3.png-- -- --628525
+8/2/2021 10:03:43 PM | * Files/Image/pandemic.gif-- -- --7211127
+8/2/2021 10:03:43 PM | * Files/Image/phone render.png-- -- --1616881
+8/2/2021 10:03:43 PM | * Programs.htm-- -- --24829
+8/2/2021 10:03:43 PM | * Renders.css-- -- --12774
+8/2/2021 10:03:43 PM | * Files/Image/kitchen.png-- -- --748402
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/kitchen-WE5c47a3fe15.png-- -- --333008
+8/2/2021 10:03:43 PM | * Files/Image/croydon subway final.png-- -- --1568285
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/croydon subway final-WEdf788de758.png-- -- --331964
+8/2/2021 10:03:43 PM | * Files/Image/pembridge memories.png-- -- --2423779
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/pembridge memories-WE5679570323.png-- -- --161878
+8/2/2021 10:03:43 PM | * Files/Image/first chair.png-- -- --3580223
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/first chair-WE0d6839d27e.png-- -- --261008
+8/2/2021 10:03:43 PM | * Files/Image/chair tutorial final.png-- -- --1291920
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/chair tutorial final-WE96bcc15abd.png-- -- --193279
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/isometric3-WE74a5399680.png-- -- --260380
+8/2/2021 10:03:43 PM | * WEFiles/Image/WEImage/phone render-WE13122a93ab.png-- -- --296395
+8/2/2021 10:03:43 PM | * Renders.htm-- -- --32747
+8/2/2021 10:03:43 PM | * robots.txt-- -- --19
+8/2/2021 10:03:43 PM | * SAMPLE(var).php-- -- --314
+8/2/2021 10:03:43 PM | * SAMPLE.css-- -- --17300
+8/2/2021 10:03:43 PM | * Files/Image/icone-demo.png-- -- --16324
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/fd65299b.jpg-- -- --9952
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/d948ce83.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/88cbd4d4.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/ac543dc2.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/deb8b244.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/2a3f2740.png-- -- --930
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/4d302d5a.png-- -- --1164
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/1ea4693c.png-- -- --1325
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/89ed3aad.png-- -- --1040
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/ab4ef622.jpg-- -- --9952
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/23fa532d.jpg-- -- --9952
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/5e7a93a0.png-- -- --2093
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/d20caab5.png-- -- --1564
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/a2d6e7ec.png-- -- --1978
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/a4748c8c.png-- -- --90
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/26c70838.png-- -- --193
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/58294202.png-- -- --825
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/cbb1ae94.png-- -- --193
+8/2/2021 10:03:43 PM | * WEFiles/Image/Skin/966687aa.png-- -- --825
+8/2/2021 10:03:43 PM | * SAMPLE.htm-- -- --51058
+8/2/2021 10:03:43 PM | * sitemap.xml-- -- --1221
+8/2/2021 10:03:43 PM | * Files/Other/FM Autochess Game Plan.pdf-- -- --119551
+8/2/2021 10:03:43 PM | * Files/Fonts/Domestic Manners.eot-- -- --61388
+8/2/2021 10:03:43 PM | * Files/Fonts/Domestic Manners.ttf-- -- --61128
+8/2/2021 10:03:43 PM | * Files/Fonts/Domestic Manners.woff-- -- --34672
+8/2/2021 10:03:43 PM | * Files/Fonts/Fonts.css-- -- --1556
+8/2/2021 10:03:43 PM | * Files/Fonts/GeosansLight.eot-- -- --60242
+8/2/2021 10:03:43 PM | * Files/Fonts/GeosansLight.ttf-- -- --60072
+8/2/2021 10:03:43 PM | * Files/Fonts/GeosansLight.woff-- -- --32304
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans Light.eot-- -- --42150
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans Light.ttf-- -- --41936
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans Light.woff-- -- --22868
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans.eot-- -- --42790
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans.ttf-- -- --42600
+8/2/2021 10:03:43 PM | * Files/Fonts/Open Sans.woff-- -- --23520
+8/2/2021 10:03:43 PM | * Templates/Base_MenuRetractable.css-- -- --6735
+8/2/2021 10:03:43 PM | * Templates/Base_Scripts.css-- -- --696
+8/2/2021 10:03:43 PM | 
+8/2/2021 10:03:43 PM | 
+--------------------------------Phase 1 Terminé--------------------------------
+8/2/2021 10:03:43 PM | 
+
