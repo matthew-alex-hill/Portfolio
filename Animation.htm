@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="WEFiles/Css/v02/openElement.css?v=50491123200" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=50491123200" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=50491123200" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="Animation.css?v=50491123200" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=50491123200" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"Animation","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"","RenderMode":"Export","PageAssociatePath":"Animation","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/1.10.2.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=50491123200"></script>
+  <style id="OEScriptManager" type="text/css">
+   .responsiveSection,.respSectContent{position:relative!important;left:auto!important;top:auto!important}
+   .responsiveSection{height:auto!important;display:block!important;margin-left:auto;margin-right:auto}
+   .heightAuto{height:auto!important}
+   .width100{width:100%!important}
+   .devNotice{display:none}
+   .topMainContainer{background:none!important;position:fixed!important;top:0;left:0!important;width:100%!important;height:0!important;z-index:10000!important}
+   .autoMenu{width:100%!important;left:0!important;display:none}
+   .navigArrow,.navigArrow2{position:fixed!important;z-index:100000!important}
+   .navigArrow2.naUp{top:80px!important}
+  </style>
+  <script type="text/javascript">
+   $(function(){WECB_Cent01_General.Init();WECB_Cent01_TopContainer.Init()});var WECB_Cent01_General={Init:function(){this.fixIFramOE();this.findElements();this.fixAndRedimension()},_IEVers:function(){var e=navigator.userAgent.toLowerCase();return e.indexOf("msie")!=-1?parseInt(e.split("msie")[1]):false},fixIFramOE:function(){var e=$("iframe").filter(function(){var e=$(this),t=e.attr("src");return t&&t.indexOf("headerModels.htm")>0});if(e.length){if(e.position().top===0&&$(".panelTopSub").length){$("<div>").css("height",parseInt($(".panelTopSub").height())+"px").insertBefore(e)}}},findElements:function(){this.$allSections=$(".responsiveSection");this.InitOk=true},fixAndRedimension:function(){$(".height_minus8").each(function(){$(this).height(parseInt($(this).height())-8)});$(".top_minus8").each(function(){$(this).css("top",parseInt($(this).css("top"))-8+"px")});$(".top_plus40").each(function(){$(this).css("top",parseInt($(this).css("top"))+40+"px")});$(".leftAuto").each(function(){$(this).css("left","auto")});this.anchorMinY=1e6;this.anchorMaxY=-100;this.$anchorFirst=null;this.$anchorLast=null;var e=0;this.$anchors=$("a").filter(function(){var t=$(this);var n=t.attr("href"),r=t.attr("id"),i=t.attr("name");if(!n&&r&&r===i){var s=t.offset().top;if(s<WECB_Cent01_General.anchorMinY){WECB_Cent01_General.anchorMinY=s;WECB_Cent01_General.$anchorFirst=t}if(s>WECB_Cent01_General.anchorMaxY){WECB_Cent01_General.anchorMaxY=s;WECB_Cent01_General.$anchorLast=t}e++;if(i>="a1"&&(i<="a99"||i==="ax")){t.attr("id","a"+e).attr("name","a"+e)}return true}else return false});var t=this._IEVers();if(t&&t<=9){$(".textShadowIE").find(".ContentBox").css("filter","progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)")}},updateAnchorsMinMaxY:function(){if(this.$anchorFirst!==null){this.anchorMinY=this.$anchorFirst.offset().top;this.anchorMaxY=this.$anchorLast.offset().top}},resizeSectionContainers:function(){var e=this.displayHeight;this.$allSections.each(function(){var t=this;if(!t.sub){t.sub=$(t).find(".respSectContent");t.sub.margin1=parseInt(t.sub.css("margin-top"));t.sub.margin2=parseInt(t.sub.css("margin-bottom"))}if(!t.sub.length)return true;var n=parseInt(t.sub.height());var r=(e-n)/2|0;t.sub.css({"margin-top":(r>t.sub.margin1?r:t.sub.margin1)+"px","margin-bottom":(r>t.sub.margin2?r:t.sub.margin2)+"px"})})},smoothScrollTo:function(e){$("html, body").animate({scrollTop:e},500)},changeVisibility:function(e,t,n){if(t!=n){e.toggle(n)}return n}};var WECB_Cent01_TopContainer={Init:function(){this.findElements();this.fixAndRedimension();this.topMenuInit();this.eventHandlers();this.buttons()},findElements:function(){this.$panelTopMain=$(".topMainContainer");this.$panelTopSub=$(".panelTopSub");this.$topMenuSubContainer=$(".topMenuSub");this.$topMenuLinks=$(".topMenuLink");this.$btRetract=$(".btRetract");this.$logoBig=$(".logoBig");this.$logoSmall=$(".logoSmall");this.$miniMenuButton=$(".miniMenuButton");this.$navArrowUp=$(".navigArrow.naUp");this.$navArrowDown=$(".navigArrow.naDown");this.$navArrowUpCent=$(".navigArrow2.naUp");this.$navArrowDownCent=$(".navigArrow2.naDown");this.navArrowUpVisible=false;this.navArrowDownVisible=false;this.navArrowUpCentVisible=false;this.navArrowDownCentVisible=false;this.$autoMenu=$(".autoMenu");this.autoMenuVisible=false;this.autoMenuHeight=0;this.$allSections=WECB_Cent01_General.$allSections;this.alwaysMinimizeMenu=this.$panelTopSub.hasClass("topMinimize");this.topMenuAlignRight=this.$topMenuSubContainer.hasClass("modeAlignRight");this.InitOk=true},fixAndRedimension:function(){var e=!!this.$btRetract.length;this.panelTopSubHeight=parseInt(this.$panelTopSub.height());this.retractButtonY=e?parseInt(this.$btRetract.css("top")):this.panelTopSubHeight;this.topMenuWidth=parseInt(this.$topMenuSubContainer.width());this.logoSmallWidth=this.$logoSmall.length?parseInt(this.$logoSmall.offset().left)+parseInt(this.$logoSmall.width()):0;this.miniMenuButton_origX=parseInt(this.$miniMenuButton.css("left"));this.topMenuY=this.$topMenuSubContainer.length?this.$topMenuSubContainer.position().top:0;this.panelTopMain_Minimized=this.alwaysMinimizeMenu;if(this.alwaysMinimizeMenu){this.retractContainer(true,false,true)}},topMenuInit:function(){this.$autoMenu.find(".BaseDiv").attr("onclick","");var e=this.$autoMenu.find(".BaseDiv.OEWELink").children("div");if(e.length===1){var t=e.attr("id"),n=0;this.$topMenuLinks.find("a").each(function(){n+=1;var t=$(this).attr("href"),r=$(this).html();var i=e.clone();i.css("white-space","nowrap").find("a").attr("href",t).html(r);i.appendTo(e.parent());i.hover(function(){$(this).addClass("OE_Over")},function(){$(this).removeClass("OE_Over")})});e.remove()}this.autoMenuHeight=this.$autoMenu.height()},eventHandlers:function(){$(window).bind("load resize",function(){WECB_Cent01_TopContainer.onResizeWindow()}).trigger("resize");this.smallLogoVisibility();this.onScrollWindow();$(window).scroll(function(){WECB_Cent01_TopContainer.onScrollWindow()});$("a").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible){WECB_Cent01_TopContainer.openAutoMenu(false)}var e=$(this).attr("href");if(e&&e.indexOf("#")===0&&e.length>=2&&$(e).length){WECB_Cent01_General.smoothScrollTo($(e).offset().top);return false}})},buttons:function(){if(this.$btRetract.length){this.$btRetract.find("a").attr("href","").css("display","none");this.$btRetract.click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);else WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized)})}this.$miniMenuButton.click(function(){if(!WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(true);return false});$(".closeMenu").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);return false});$(".navigArrow, .navigArrow2").click(function(){var e=parseInt($(document).scrollTop());var t=$(this).hasClass("naUp");var n=e;WECB_Cent01_General.$anchors.each(function(){var r=$(this).offset().top;if(!t){if(r>e+40&&(n===e||n>r)){n=r}}else{if(r<e&&(n===e||n<r)){n=r}}});if(n!=e)WECB_Cent01_General.smoothScrollTo(n)})},openAutoMenu:function(e){var t=this.$autoMenu;var n=this.$panelTopMain;if(e!==true){t.hide(500);this.autoMenuVisible=false}else{t.show(500);this.autoMenuVisible=true}this.retractContainer();this.menuModeControl()},retractContainer:function(e,t,n){if(e===undefined)e=this.panelTopMain_Minimized;if(this.alwaysMinimizeMenu)e=true;if(t===undefined)t=this.autoMenuVisible;var r=this.$panelTopMain;var i=e?-this.topMenuY:0;var s=parseInt(r.css("top"));if(!this.alwaysMinimizeMenu){var o=e&&!t?"center bottom":"center top";this.$btRetract.css("background-position",o)}if(!t){if(s>0){r.stop().css("top",0)}}else{var u=this.$autoMenu;var a=this.autoMenuHeight?this.autoMenuHeight:parseInt(u.height());var f=this.retractButtonY-a;u.css("top",f+"px");i=-f}this.panelTopMain_Minimized=e;r.stop().animate({top:i},n?0:500,function(){WECB_Cent01_TopContainer.smallLogoVisibility()});if(!e)this.smallLogoVisibility()},smallLogoVisibility:function(){if(!this.InitOk)return;this.$logoSmall.toggle(this.panelTopMain_Minimized);this.$logoBig.toggle(!this.panelTopMain_Minimized&&!this.autoMenuVisible);this.menuModeControl()},menuModeControl:function(){if(this.autoMenuVisible){this.$topMenuSubContainer.hide();this.$miniMenuButton.hide();return}var e=parseInt(this.$panelTopMain.width());if(this.panelTopMain_Minimized)e-=this.logoSmallWidth*(this.topMenuAlignRight?1:2);var t=e<this.topMenuWidth+8;if(t){this.$topMenuSubContainer.hide();this.$miniMenuButton.show()}else{this.$topMenuSubContainer.show();this.$miniMenuButton.hide()}},onScrollWindow:function(){if(!this.InitOk)return;var e=parseInt($(document).scrollTop());var t=e>0;var n=this.panelTopMain_Minimized;if(t!==n){this.retractContainer(!n)}var r=e-40<WECB_Cent01_General.anchorMinY||WECB_Cent01_General.anchorMaxY<0;var i=e-80+WECB_Cent01_General.displayHeight>WECB_Cent01_General.anchorMaxY||WECB_Cent01_General.anchorMaxY<0;this.navArrowUpCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUpCent,this.navArrowUpCentVisible,!r&&!this.disableCenterArrows);this.navArrowUpVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUp,this.navArrowUpVisible,!r);this.navArrowDownCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDownCent,this.navArrowDownCentVisible,!i&&!this.disableCenterArrows);this.navArrowDownVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDown,this.navArrowDownVisible,!i)},onResizeWindow:function(){WECB_Cent01_General.displayHeight=$(window).height();if(!this.InitOk)return;this.disableCenterArrows=WECB_Cent01_General.displayHeight<640;this.menuModeControl();var e=parseInt($(document).scrollTop());var t=$(document).height();WECB_Cent01_General.resizeSectionContainers();var n=parseInt($(document).scrollTop());if(n==e){var r=$(document).height();if(t&&r&&r!=t){var i=r/t;n=parseInt(n+n/r*(r-t)*40)}}WECB_Cent01_General.updateAnchorsMinMaxY();this.onScrollWindow()}};
+  </script>
+ </head>
+ <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RBoth OEPageXbody OESK_XBody_Default" style="z-index:1000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTAbs">
+     <div id="WE2b0cfdf0c8" class="BaseDiv RBoth OEWECadre OESK_WECadre_Default" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WE2b0cfdf0c8">
+       <div class="OESZ OESZ_Top OESZG_WE2b0cfdf0c8"></div>
+       <div class="OESZ OESZ_Content OESZG_WE2b0cfdf0c8"></div>
+       <div class="OESZ OESZ_Bottom OESZG_WE2b0cfdf0c8"></div>
+      </div>
+     </div>
+     <div id="WE3c6b8c0f8a" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  topMainContainer" style="z-index:1002">
+      <div class="OESZ OESZ_DivContent OESZG_WE3c6b8c0f8a">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+        <div id="WE3320223471" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH panelTopSub" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE3320223471">
+          <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+           <div id="WEe71be4119f" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default  autoMenu" style="z-index:1006">
+            <div class="OESZ OESZ_DivContent OESZG_WEe71be4119f">
+             <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:visible">
+              <div class="OERelLine OEHAlignL OEVAlignB">
+               <div id="WE75b72e3f1a" class="BaseDiv RNone OEWELink OESK_WELink_Default  width100" style="z-index:1001" onclick="return OE.Navigate.open(event,'(__AutoMenuURL__)',1)">
+                <div class="OESZ OESZ_DivContent OESZG_WE75b72e3f1a OEGo">
+                 <a class="OESZ OESZ_Link OESZG_WE75b72e3f1a ContentBox" data-cd="PageLink" href="(__AutoMenuURL__)"><br /></a>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WEf4bec0f426" class="BaseDiv RNone OEWEFlag OESK_WEFlag_Default  leftAuto" style="z-index:1001">
+            <div class="OESZ OESZ_DivContent OESZG_WEf4bec0f426">
+             <div class="OESZ OESZ_Flag OESZG_WEf4bec0f426">
+              <img style="border:none;vertical-align:bottom" src="WEFiles/Image/Flag_DEFAULT.png" alt="English" />
+             </div>
+            </div>
+           </div>
+           <div id="WE54ccb940bf" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH logoBig" style="z-index:1005">
+            <div class="OESZ OESZ_DivContent OESZG_WE54ccb940bf">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0">
+              <div id="WEaa685a8e5d" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+               <div class="OESZ OESZ_DivContent OESZG_WEaa685a8e5d">
+                <span class="OESZ OESZ_Text OESZG_WEaa685a8e5d ContentBox"><span style="font-family:'Times New Roman', Times, serif;">MATTHEW&nbsp;HILL</span><br /></span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WE6f8504e708" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  logoSmall top_plus40" style="z-index:1004">
+            <div class="OESZ OESZ_DivContent OESZG_WE6f8504e708">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0">
+              <div id="WE7c35e49e09" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:1001">
+               <div class="OESZ OESZ_DivContent OESZG_WE7c35e49e09">
+                <span class="OESZ OESZ_Text OESZG_WE7c35e49e09 ContentBox">Animations<br /></span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WE0850e78932" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH topMenuSub" style="z-index:1002">
+            <div class="OESZ OESZ_DivContent OESZG_WE0850e78932">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+              <div id="WE4289c7febd" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1001" onclick="return OE.Navigate.open(event,'Animation.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE4289c7febd">
+                <a class="OESZ OESZ_Link OESZG_WE4289c7febd ContentBox" data-cd="PageLink" href="Animation.htm">Animations<br /></a>
+               </div>
+              </div>
+              <div id="WE71362a9dd3" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1002" onclick="return OE.Navigate.open(event,'Renders.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE71362a9dd3">
+                <a class="OESZ OESZ_Link OESZG_WE71362a9dd3 ContentBox" data-cd="PageLink" href="Renders.htm">Renders<br /></a>
+               </div>
+              </div>
+              <div id="WE15b3289f7a" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1003" onclick="return OE.Navigate.open(event,'Programs.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE15b3289f7a">
+                <a class="OESZ OESZ_Link OESZG_WE15b3289f7a ContentBox" data-cd="PageLink" href="Programs.htm"> Programs</a>
+               </div>
+              </div>
+              <div id="WE68738c18f2" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1004" onclick="return OE.Navigate.open(event,'Music.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE68738c18f2">
+                <a class="OESZ OESZ_Link OESZG_WE68738c18f2 ContentBox" data-cd="PageLink" href="Music.htm"> Sound Design</a>
+               </div>
+              </div>
+              <div id="WEd8d283fb19" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1005" onclick="return OE.Navigate.open(event,'Games.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WEd8d283fb19">
+                <a class="OESZ OESZ_Link OESZG_WEd8d283fb19 ContentBox" data-cd="PageLink" href="Games.htm"> Games<br /></a>
+               </div>
+              </div>
+              <div id="WE312bb51bd8" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1006" onclick="return OE.Navigate.open(event,'index.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE312bb51bd8">
+                <a class="OESZ OESZ_Link OESZG_WE312bb51bd8 ContentBox" data-cd="PageLink" href="index.htm"> About</a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WEb3f23a65e1" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OEGd  miniMenuButton" style="z-index:1003">
+            <div class="OESZ OESZ_DivContent OESZG_WEb3f23a65e1">
+             <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="WEfda13737a9" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH btRetract" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WEfda13737a9">
+          <a class="OESZ OESZ_Link OESZG_WEfda13737a9 ContentBox" data-cd="PageLink"><br /></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE73c57af4ad" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:1007">
+      <div class="OESZ OESZ_DivContent OESZG_WE73c57af4ad">
+       <script type='text/javascript'>
+       	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/BeMfnCPVc8c' frameborder='0' allowfullscreen></iframe>");
+       	document.write("<div style='display: none !important;'>"); }
+       </script>
+       <object width="100%" height="100%">
+        <param name="movie" value="http://www.youtube-nocookie.com/v/BeMfnCPVc8c&pp=sAQA&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="wmode" value="transparent" />
+        <embed type="application/x-shockwave-flash" src="http://www.youtube-nocookie.com/v/BeMfnCPVc8c&pp=sAQA&fs=1&rel=0&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+       </object>
+       <script type='text/javascript'>
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+      </div>
+     </div>
+     <div id="WEb15856dae6" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1003">
+      <div class="OESZ OESZ_DivContent OESZG_WEb15856dae6">
+       <span class="ContentBox"><br /></span>
+      </div>
+     </div>
+     <div id="WE13453c5846" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1006">
+      <div class="OESZ OESZ_DivContent OESZG_WE13453c5846">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0"></div>
+      </div>
+     </div>
+     <div id="WEfba0c97c91" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1010">
+      <div class="OESZ OESZ_DivContent OESZG_WEfba0c97c91">
+       <span class="ContentBox">Diagnosis<br /></span>
+      </div>
+     </div>
+     <div id="WE57ee41b6f0" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1009">
+      <div class="OESZ OESZ_DivContent OESZG_WE57ee41b6f0">
+       <span class="ContentBox">A looped short film exploring struggles with mental health.<br /></span>
+      </div>
+     </div>
+     <div id="WEfa8fc23f04" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1011">
+      <div class="OESZ OESZ_DivContent OESZG_WEfa8fc23f04">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WEfa8fc23f04" alt="" />
+      </div>
+     </div>
+     <div id="WE266b9e10af" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1008">
+      <div class="OESZ OESZ_DivContent OESZG_WE266b9e10af">
+       <span class="ContentBox">This film explores the difficulties in discovering you have a health issue, but there not being an apparent solution for taking action to solve that problem. The problem almost becomes your identity, and this can be especially true for mental health issues such as depression, autism or ADHD. This results in the ending of the film, where the lead character becomes the warning signal they were trying to fix. This film helped me develop skills in rigging to animate the lead character and also taught me to overcome problems in cinematic lighting with limited CPU power for rendering using colour correction.<br /></span>
+      </div>
+     </div>
+     <div id="WE29ca007bf6" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:1004">
+      <div class="OESZ OESZ_DivContent OESZG_WE29ca007bf6">
+       <script type='text/javascript'>
+       	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/_93tcHWZes4' frameborder='0' allowfullscreen></iframe>");
+       	document.write("<div style='display: none !important;'>"); }
+       </script>
+       <object width="100%" height="100%">
+        <param name="movie" value="https://www.youtube.com/watch?v=_93tcHWZes4&pp=sAQA&color1=0xEFEFEF&color2=0x666666" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="wmode" value="transparent" />
+        <embed type="application/x-shockwave-flash" src="https://www.youtube.com/watch?v=_93tcHWZes4&pp=sAQA&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+       </object>
+       <script type='text/javascript'>
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+      </div>
+     </div>
+     <div id="WE39987dd047" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1014">
+      <div class="OESZ OESZ_DivContent OESZG_WE39987dd047">
+       <span class="ContentBox">Sleep<br /></span>
+      </div>
+     </div>
+     <div id="WEab98d6d443" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1015">
+      <div class="OESZ OESZ_DivContent OESZG_WEab98d6d443">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WEab98d6d443" alt="" />
+      </div>
+     </div>
+     <div id="WE34c15b852a" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1013">
+      <div class="OESZ OESZ_DivContent OESZG_WE34c15b852a">
+       <span class="ContentBox">A presentation of the dread of getting up.<br /></span>
+      </div>
+     </div>
+     <div id="WE5449be1a0c" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1012">
+      <div class="OESZ OESZ_DivContent OESZG_WE5449be1a0c">
+       <span class="ContentBox">Sleep is a film produced in an extremely stressful period of my life and it represents the seemingly endless struggle of trying to get up and start the day. The switching from comforting and surreal dream scenarios to the harsh sounds of the alarm clocks represents the contrast between the world of comforts I would try and surround myself with and the constant underlying dread of knowing that I have jobs to do and that I must leave these comforts behind to do them. The creation of this film involved experimenting with denoising AI to create the cracked almost paper-like texture of the scene. I also learned how to use rigid body simulation to create the realistic motions of the alarm clocks in the bedroom scenes.<br /></span>
+      </div>
+     </div>
+     <div id="WE8e98206497" class="BaseDiv RBoth OEWEVideoYouTube OESK_WEVideoYouTube_Default" style="z-index:1005">
+      <div class="OESZ OESZ_DivContent OESZG_WE8e98206497">
+       <script type='text/javascript'>
+       	WEInfoPage.oeIsFlashOn = false; try { WEInfoPage.oeIsFlashOn = (typeof navigator.plugins == 'undefined' || navigator.plugins.length == 0) ? !!(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) : navigator.plugins['Shockwave Flash']; } catch (ex) {;} 
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("<iframe width='100%' height='100%' style='width:100%; height:100%;' src='https://www.youtube.com/embed/qxQsFcNcCak' frameborder='0' allowfullscreen></iframe>");
+       	document.write("<div style='display: none !important;'>"); }
+       </script>
+       <object width="100%" height="100%">
+        <param name="movie" value="https://www.youtube.com/watch?v=qxQsFcNcCak&pp=sAQA&color1=0xEFEFEF&color2=0x666666" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="wmode" value="transparent" />
+        <embed type="application/x-shockwave-flash" src="https://www.youtube.com/watch?v=qxQsFcNcCak&pp=sAQA&color1=0xEFEFEF&color2=0x666666" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>
+       </object>
+       <script type='text/javascript'>
+       	if (!WEInfoPage.oeIsFlashOn) { 	document.write("</div>"); }</script>
+      </div>
+     </div>
+     <div id="WE86bef8274e" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1016">
+      <div class="OESZ OESZ_DivContent OESZG_WE86bef8274e">
+       <span class="ContentBox">Leaving<br /></span>
+      </div>
+     </div>
+     <div id="WE3b729c0945" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1017">
+      <div class="OESZ OESZ_DivContent OESZG_WE3b729c0945">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WE3b729c0945" alt="" />
+      </div>
+     </div>
+     <div id="WEa3c8fd5f12" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1018">
+      <div class="OESZ OESZ_DivContent OESZG_WEa3c8fd5f12">
+       <span class="ContentBox">The challenges of saying goodbye.<br /></span>
+      </div>
+     </div>
+     <div id="WEb57dfffff7" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1019">
+      <div class="OESZ OESZ_DivContent OESZG_WEb57dfffff7">
+       <span class="ContentBox">This short film represents a final family gathering before my sister left for a job in a different city. The projection on the wall symbolises the jovial and leighthearted conversations masking the dawning realisation that someone very close to you is becoming much further away. The creation of this film used volumetrics to make the projection create light filling the room, which acts as a fog around the escaping chair, as if the party like atmosphere is obscuring the sombre nature of the events. The audio was captured at a restaurant and edited in pitch and eq to sound faded and dampened and almost blend in the background as the protagonist stares into space contemplating a future without a loved one.<br /></span>
+      </div>
+     </div>
+     <div id="WE3c7dad62fe" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default" style="z-index:1020" onclick="return OE.Navigate.blank(event,'https://www.youtube.com/channel/UC8C5gH0SstWN5GoPX7hNEXw')">
+      <div class="OESZ OESZ_DivContent OESZG_WE3c7dad62fe">
+       <a href="https://www.youtube.com/channel/UC8C5gH0SstWN5GoPX7hNEXw" data-cd="PageLink" target="_blank">
+        <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+       </a>
+      </div>
+     </div>
+     <div id="WE36f52442b3" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1021">
+      <div class="OESZ OESZ_DivContent OESZG_WE36f52442b3">
+       <span class="ContentBox"><a href="https://www.youtube.com/channel/UC8C5gH0SstWN5GoPX7hNEXw">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Check out all of my work on my YouTube channel</a><br /></span>
+      </div>
+     </div>
+    </div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs">
+     <div id="WE8a32418e43" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH navigArrow2 naUp" style="z-index:1003">
+      <div class="OESZ OESZ_DivContent OESZG_WE8a32418e43">
+       <a class="OESZ OESZ_Link OESZG_WE8a32418e43 ContentBox" data-cd="PageLink"><br /></a>
+      </div>
+     </div>
+     <div id="WE80fce8a907" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH navigArrow2 naDown" style="z-index:1002">
+      <div class="OESZ OESZ_DivContent OESZG_WE80fce8a907">
+       <a class="OESZ OESZ_Link OESZG_WE80fce8a907 ContentBox" data-cd="PageLink"><br /></a>
+      </div>
+     </div>
+     <div id="WEabee7caf7d" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WEabee7caf7d">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WEee0c95fb9c" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WEee0c95fb9c">
+          <span class="OESZ OESZ_Text OESZG_WEee0c95fb9c ContentBox">Matthew Hill 2021</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(["WEFiles/Image/Skin/f72ffa6d.png","WEFiles/Image/Skin/0db815a6.png","WEFiles/Image/Skin/962e1fc1.png"]).preloadImg();
+  </script>
+ </body>
+</html>

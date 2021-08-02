@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc />
+    <lastmod>2021-08-02</lastmod>
+  </url>
+  <url oeid="a22c01c7-f741-42a3-8b73-d94dec611af5" oelang="DEFAULT">
+    <loc>index.htm</loc>
+    <lastmod>2021-08-02</lastmod>
+  </url>
+  <url oeid="bf495c6a-4399-4279-ad58-cc22de77604e" oelang="DEFAULT">
+    <loc>SAMPLE.htm</loc>
+    <lastmod>2021-08-01</lastmod>
+  </url>
+  <url oeid="740d6fc2-e77f-42b7-a295-4c85682adcf1" oelang="DEFAULT">
+    <loc>Animation.htm</loc>
+    <lastmod>2021-08-02</lastmod>
+  </url>
+  <url oeid="54027cfd-359b-4a46-ad8f-1e4f01452702" oelang="DEFAULT">
+    <loc>Renders.htm</loc>
+    <lastmod>2021-07-31</lastmod>
+  </url>
+  <url oeid="f647e00a-960d-4f25-85ac-6c0de0d05040" oelang="DEFAULT">
+    <loc>Programs.htm</loc>
+    <lastmod>2021-08-01</lastmod>
+  </url>
+  <url oeid="7f36260e-9ba3-43b8-aa77-c7c9ddacc873" oelang="DEFAULT">
+    <loc>Music.htm</loc>
+    <lastmod>2021-08-01</lastmod>
+  </url>
+  <url oeid="eb612fc2-8576-48ab-8061-5cd5f70ab501" oelang="DEFAULT">
+    <loc>Games.htm</loc>
+    <lastmod>2021-08-02</lastmod>
+  </url>
+</urlset>

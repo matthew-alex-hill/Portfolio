@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="WEFiles/Css/v02/openElement.css?v=50491123200" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=50491123200" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=50491123200" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="Games.css?v=50491123200" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=50491123200" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"Games","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"","RenderMode":"Export","PageAssociatePath":"Games","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/1.10.2.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=50491123200"></script>
+  <style id="OEScriptManager" type="text/css">
+   .responsiveSection,.respSectContent{position:relative!important;left:auto!important;top:auto!important}
+   .responsiveSection{height:auto!important;display:block!important;margin-left:auto;margin-right:auto}
+   .heightAuto{height:auto!important}
+   .width100{width:100%!important}
+   .devNotice{display:none}
+   .topMainContainer{background:none!important;position:fixed!important;top:0;left:0!important;width:100%!important;height:0!important;z-index:10000!important}
+   .autoMenu{width:100%!important;left:0!important;display:none}
+   .navigArrow,.navigArrow2{position:fixed!important;z-index:100000!important}
+   .navigArrow2.naUp{top:80px!important}
+  </style>
+  <script type="text/javascript">
+   $(function(){WECB_Cent01_General.Init();WECB_Cent01_TopContainer.Init()});var WECB_Cent01_General={Init:function(){this.fixIFramOE();this.findElements();this.fixAndRedimension()},_IEVers:function(){var e=navigator.userAgent.toLowerCase();return e.indexOf("msie")!=-1?parseInt(e.split("msie")[1]):false},fixIFramOE:function(){var e=$("iframe").filter(function(){var e=$(this),t=e.attr("src");return t&&t.indexOf("headerModels.htm")>0});if(e.length){if(e.position().top===0&&$(".panelTopSub").length){$("<div>").css("height",parseInt($(".panelTopSub").height())+"px").insertBefore(e)}}},findElements:function(){this.$allSections=$(".responsiveSection");this.InitOk=true},fixAndRedimension:function(){$(".height_minus8").each(function(){$(this).height(parseInt($(this).height())-8)});$(".top_minus8").each(function(){$(this).css("top",parseInt($(this).css("top"))-8+"px")});$(".top_plus40").each(function(){$(this).css("top",parseInt($(this).css("top"))+40+"px")});$(".leftAuto").each(function(){$(this).css("left","auto")});this.anchorMinY=1e6;this.anchorMaxY=-100;this.$anchorFirst=null;this.$anchorLast=null;var e=0;this.$anchors=$("a").filter(function(){var t=$(this);var n=t.attr("href"),r=t.attr("id"),i=t.attr("name");if(!n&&r&&r===i){var s=t.offset().top;if(s<WECB_Cent01_General.anchorMinY){WECB_Cent01_General.anchorMinY=s;WECB_Cent01_General.$anchorFirst=t}if(s>WECB_Cent01_General.anchorMaxY){WECB_Cent01_General.anchorMaxY=s;WECB_Cent01_General.$anchorLast=t}e++;if(i>="a1"&&(i<="a99"||i==="ax")){t.attr("id","a"+e).attr("name","a"+e)}return true}else return false});var t=this._IEVers();if(t&&t<=9){$(".textShadowIE").find(".ContentBox").css("filter","progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)")}},updateAnchorsMinMaxY:function(){if(this.$anchorFirst!==null){this.anchorMinY=this.$anchorFirst.offset().top;this.anchorMaxY=this.$anchorLast.offset().top}},resizeSectionContainers:function(){var e=this.displayHeight;this.$allSections.each(function(){var t=this;if(!t.sub){t.sub=$(t).find(".respSectContent");t.sub.margin1=parseInt(t.sub.css("margin-top"));t.sub.margin2=parseInt(t.sub.css("margin-bottom"))}if(!t.sub.length)return true;var n=parseInt(t.sub.height());var r=(e-n)/2|0;t.sub.css({"margin-top":(r>t.sub.margin1?r:t.sub.margin1)+"px","margin-bottom":(r>t.sub.margin2?r:t.sub.margin2)+"px"})})},smoothScrollTo:function(e){$("html, body").animate({scrollTop:e},500)},changeVisibility:function(e,t,n){if(t!=n){e.toggle(n)}return n}};var WECB_Cent01_TopContainer={Init:function(){this.findElements();this.fixAndRedimension();this.topMenuInit();this.eventHandlers();this.buttons()},findElements:function(){this.$panelTopMain=$(".topMainContainer");this.$panelTopSub=$(".panelTopSub");this.$topMenuSubContainer=$(".topMenuSub");this.$topMenuLinks=$(".topMenuLink");this.$btRetract=$(".btRetract");this.$logoBig=$(".logoBig");this.$logoSmall=$(".logoSmall");this.$miniMenuButton=$(".miniMenuButton");this.$navArrowUp=$(".navigArrow.naUp");this.$navArrowDown=$(".navigArrow.naDown");this.$navArrowUpCent=$(".navigArrow2.naUp");this.$navArrowDownCent=$(".navigArrow2.naDown");this.navArrowUpVisible=false;this.navArrowDownVisible=false;this.navArrowUpCentVisible=false;this.navArrowDownCentVisible=false;this.$autoMenu=$(".autoMenu");this.autoMenuVisible=false;this.autoMenuHeight=0;this.$allSections=WECB_Cent01_General.$allSections;this.alwaysMinimizeMenu=this.$panelTopSub.hasClass("topMinimize");this.topMenuAlignRight=this.$topMenuSubContainer.hasClass("modeAlignRight");this.InitOk=true},fixAndRedimension:function(){var e=!!this.$btRetract.length;this.panelTopSubHeight=parseInt(this.$panelTopSub.height());this.retractButtonY=e?parseInt(this.$btRetract.css("top")):this.panelTopSubHeight;this.topMenuWidth=parseInt(this.$topMenuSubContainer.width());this.logoSmallWidth=this.$logoSmall.length?parseInt(this.$logoSmall.offset().left)+parseInt(this.$logoSmall.width()):0;this.miniMenuButton_origX=parseInt(this.$miniMenuButton.css("left"));this.topMenuY=this.$topMenuSubContainer.length?this.$topMenuSubContainer.position().top:0;this.panelTopMain_Minimized=this.alwaysMinimizeMenu;if(this.alwaysMinimizeMenu){this.retractContainer(true,false,true)}},topMenuInit:function(){this.$autoMenu.find(".BaseDiv").attr("onclick","");var e=this.$autoMenu.find(".BaseDiv.OEWELink").children("div");if(e.length===1){var t=e.attr("id"),n=0;this.$topMenuLinks.find("a").each(function(){n+=1;var t=$(this).attr("href"),r=$(this).html();var i=e.clone();i.css("white-space","nowrap").find("a").attr("href",t).html(r);i.appendTo(e.parent());i.hover(function(){$(this).addClass("OE_Over")},function(){$(this).removeClass("OE_Over")})});e.remove()}this.autoMenuHeight=this.$autoMenu.height()},eventHandlers:function(){$(window).bind("load resize",function(){WECB_Cent01_TopContainer.onResizeWindow()}).trigger("resize");this.smallLogoVisibility();this.onScrollWindow();$(window).scroll(function(){WECB_Cent01_TopContainer.onScrollWindow()});$("a").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible){WECB_Cent01_TopContainer.openAutoMenu(false)}var e=$(this).attr("href");if(e&&e.indexOf("#")===0&&e.length>=2&&$(e).length){WECB_Cent01_General.smoothScrollTo($(e).offset().top);return false}})},buttons:function(){if(this.$btRetract.length){this.$btRetract.find("a").attr("href","").css("display","none");this.$btRetract.click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);else WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized)})}this.$miniMenuButton.click(function(){if(!WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(true);return false});$(".closeMenu").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);return false});$(".navigArrow, .navigArrow2").click(function(){var e=parseInt($(document).scrollTop());var t=$(this).hasClass("naUp");var n=e;WECB_Cent01_General.$anchors.each(function(){var r=$(this).offset().top;if(!t){if(r>e+40&&(n===e||n>r)){n=r}}else{if(r<e&&(n===e||n<r)){n=r}}});if(n!=e)WECB_Cent01_General.smoothScrollTo(n)})},openAutoMenu:function(e){var t=this.$autoMenu;var n=this.$panelTopMain;if(e!==true){t.hide(500);this.autoMenuVisible=false}else{t.show(500);this.autoMenuVisible=true}this.retractContainer();this.menuModeControl()},retractContainer:function(e,t,n){if(e===undefined)e=this.panelTopMain_Minimized;if(this.alwaysMinimizeMenu)e=true;if(t===undefined)t=this.autoMenuVisible;var r=this.$panelTopMain;var i=e?-this.topMenuY:0;var s=parseInt(r.css("top"));if(!this.alwaysMinimizeMenu){var o=e&&!t?"center bottom":"center top";this.$btRetract.css("background-position",o)}if(!t){if(s>0){r.stop().css("top",0)}}else{var u=this.$autoMenu;var a=this.autoMenuHeight?this.autoMenuHeight:parseInt(u.height());var f=this.retractButtonY-a;u.css("top",f+"px");i=-f}this.panelTopMain_Minimized=e;r.stop().animate({top:i},n?0:500,function(){WECB_Cent01_TopContainer.smallLogoVisibility()});if(!e)this.smallLogoVisibility()},smallLogoVisibility:function(){if(!this.InitOk)return;this.$logoSmall.toggle(this.panelTopMain_Minimized);this.$logoBig.toggle(!this.panelTopMain_Minimized&&!this.autoMenuVisible);this.menuModeControl()},menuModeControl:function(){if(this.autoMenuVisible){this.$topMenuSubContainer.hide();this.$miniMenuButton.hide();return}var e=parseInt(this.$panelTopMain.width());if(this.panelTopMain_Minimized)e-=this.logoSmallWidth*(this.topMenuAlignRight?1:2);var t=e<this.topMenuWidth+8;if(t){this.$topMenuSubContainer.hide();this.$miniMenuButton.show()}else{this.$topMenuSubContainer.show();this.$miniMenuButton.hide()}},onScrollWindow:function(){if(!this.InitOk)return;var e=parseInt($(document).scrollTop());var t=e>0;var n=this.panelTopMain_Minimized;if(t!==n){this.retractContainer(!n)}var r=e-40<WECB_Cent01_General.anchorMinY||WECB_Cent01_General.anchorMaxY<0;var i=e-80+WECB_Cent01_General.displayHeight>WECB_Cent01_General.anchorMaxY||WECB_Cent01_General.anchorMaxY<0;this.navArrowUpCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUpCent,this.navArrowUpCentVisible,!r&&!this.disableCenterArrows);this.navArrowUpVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUp,this.navArrowUpVisible,!r);this.navArrowDownCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDownCent,this.navArrowDownCentVisible,!i&&!this.disableCenterArrows);this.navArrowDownVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDown,this.navArrowDownVisible,!i)},onResizeWindow:function(){WECB_Cent01_General.displayHeight=$(window).height();if(!this.InitOk)return;this.disableCenterArrows=WECB_Cent01_General.displayHeight<640;this.menuModeControl();var e=parseInt($(document).scrollTop());var t=$(document).height();WECB_Cent01_General.resizeSectionContainers();var n=parseInt($(document).scrollTop());if(n==e){var r=$(document).height();if(t&&r&&r!=t){var i=r/t;n=parseInt(n+n/r*(r-t)*40)}}WECB_Cent01_General.updateAnchorsMinMaxY();this.onScrollWindow()}};
+  </script>
+ </head>
+ <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RBoth OEPageXbody OESK_XBody_Default" style="z-index:1000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTAbs">
+     <div id="WE292d14df6c" class="BaseDiv RBoth OEWECadre OESK_WECadre_Default" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WE292d14df6c">
+       <div class="OESZ OESZ_Top OESZG_WE292d14df6c"></div>
+       <div class="OESZ OESZ_Content OESZG_WE292d14df6c"></div>
+       <div class="OESZ OESZ_Bottom OESZG_WE292d14df6c"></div>
+      </div>
+     </div>
+     <div id="WE8588cd259a" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  topMainContainer" style="z-index:1002">
+      <div class="OESZ OESZ_DivContent OESZG_WE8588cd259a">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+        <div id="WE56a7232a43" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH panelTopSub" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE56a7232a43">
+          <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+           <div id="WEaac9d382d5" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default  autoMenu" style="z-index:1006">
+            <div class="OESZ OESZ_DivContent OESZG_WEaac9d382d5">
+             <div class="OECT OECT_Content OECTRel OEDynTag0" style="overflow:visible">
+              <div class="OERelLine OEHAlignL OEVAlignB">
+               <div id="WE888af7b595" class="BaseDiv RNone OEWELink OESK_WELink_Default  width100" style="z-index:1001" onclick="return OE.Navigate.open(event,'(__AutoMenuURL__)',1)">
+                <div class="OESZ OESZ_DivContent OESZG_WE888af7b595 OEGo">
+                 <a class="OESZ OESZ_Link OESZG_WE888af7b595 ContentBox" data-cd="PageLink" href="(__AutoMenuURL__)"><br /></a>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WEe07796fccb" class="BaseDiv RNone OEWEFlag OESK_WEFlag_Default  leftAuto" style="z-index:1001">
+            <div class="OESZ OESZ_DivContent OESZG_WEe07796fccb">
+             <div class="OESZ OESZ_Flag OESZG_WEe07796fccb">
+              <img style="border:none;vertical-align:bottom" src="WEFiles/Image/Flag_DEFAULT.png" alt="English" />
+             </div>
+            </div>
+           </div>
+           <div id="WEc64d29caec" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH logoBig" style="z-index:1005">
+            <div class="OESZ OESZ_DivContent OESZG_WEc64d29caec">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0">
+              <div id="WEc796359794" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+               <div class="OESZ OESZ_DivContent OESZG_WEc796359794">
+                <span class="OESZ OESZ_Text OESZG_WEc796359794 ContentBox"><span style="font-family:'Times New Roman', Times, serif;">MATTHEW&nbsp;HILL</span><br /></span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WEdf435b4d8b" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  logoSmall top_plus40" style="z-index:1004">
+            <div class="OESZ OESZ_DivContent OESZG_WEdf435b4d8b">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0">
+              <div id="WEa61db5af98" class="BaseDiv RNone OEWELabel OESK_WELabel_Default" style="z-index:1001">
+               <div class="OESZ OESZ_DivContent OESZG_WEa61db5af98">
+                <span class="OESZ OESZ_Text OESZG_WEa61db5af98 ContentBox">Games<br /></span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WEc40698f43f" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH topMenuSub" style="z-index:1002">
+            <div class="OESZ OESZ_DivContent OESZG_WEc40698f43f">
+             <div class="OECT OECT_Content OECTAbs OEDynTag0" style="overflow:visible">
+              <div id="WE7314397c13" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1001" onclick="return OE.Navigate.open(event,'Animation.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE7314397c13">
+                <a class="OESZ OESZ_Link OESZG_WE7314397c13 ContentBox" data-cd="PageLink" href="Animation.htm">Animations<br /></a>
+               </div>
+              </div>
+              <div id="WE5b3e2091d7" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1002" onclick="return OE.Navigate.open(event,'Renders.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE5b3e2091d7">
+                <a class="OESZ OESZ_Link OESZG_WE5b3e2091d7 ContentBox" data-cd="PageLink" href="Renders.htm">Renders<br /></a>
+               </div>
+              </div>
+              <div id="WEcdf4df66e2" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1003" onclick="return OE.Navigate.open(event,'Programs.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WEcdf4df66e2">
+                <a class="OESZ OESZ_Link OESZG_WEcdf4df66e2 ContentBox" data-cd="PageLink" href="Programs.htm"> Programs</a>
+               </div>
+              </div>
+              <div id="WE5e078652bb" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1004" onclick="return OE.Navigate.open(event,'Music.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE5e078652bb">
+                <a class="OESZ OESZ_Link OESZG_WE5e078652bb ContentBox" data-cd="PageLink" href="Music.htm"> Sound Design</a>
+               </div>
+              </div>
+              <div id="WEdb200e4e3e" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1005" onclick="return OE.Navigate.open(event,'Games.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WEdb200e4e3e">
+                <a class="OESZ OESZ_Link OESZG_WEdb200e4e3e ContentBox" data-cd="PageLink" href="Games.htm"> Games<br /></a>
+               </div>
+              </div>
+              <div id="WE0c91140cc9" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1006" onclick="return OE.Navigate.open(event,'index.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE0c91140cc9">
+                <a class="OESZ OESZ_Link OESZG_WE0c91140cc9 ContentBox" data-cd="PageLink" href="index.htm"> About</a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div id="WE4445b1d5b9" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OEGd  miniMenuButton" style="z-index:1003">
+            <div class="OESZ OESZ_DivContent OESZG_WE4445b1d5b9">
+             <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="WEc938494cc8" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH btRetract" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WEc938494cc8">
+          <a class="OESZ OESZ_Link OESZG_WEc938494cc8 ContentBox" data-cd="PageLink"><br /></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE3ba5da1887" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1005">
+      <div class="OESZ OESZ_DivContent OESZG_WE3ba5da1887">
+       <span class="ContentBox">Game Ideas<br /></span>
+      </div>
+     </div>
+     <div id="WE84cddfe403" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1003">
+      <div class="OESZ OESZ_DivContent OESZG_WE84cddfe403">
+       <span class="ContentBox"><br /></span>
+      </div>
+     </div>
+     <div id="WEad0097300e" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1006">
+      <div class="OESZ OESZ_DivContent OESZG_WEad0097300e">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WEad0097300e" alt="" />
+      </div>
+     </div>
+     <div id="WEf6bbc414b0" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1004">
+      <div class="OESZ OESZ_DivContent OESZG_WEf6bbc414b0">
+       <span class="ContentBox">Below is a list of game ideas I've come up with and some art and design work I've done towards the games. As games development is a lengthy process and I've been busy with university and other projects, I haven't started developing any, but the ideas are interesting nevertheless.<br /></span>
+      </div>
+     </div>
+     <div id="WE98d04dc956" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1008">
+      <div class="OESZ OESZ_DivContent OESZG_WE98d04dc956">
+       <span class="ContentBox">I Have No Mouth and You Must Hold<br /></span>
+      </div>
+     </div>
+     <div id="WE08f33d8e9f" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1009">
+      <div class="OESZ OESZ_DivContent OESZG_WE08f33d8e9f">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WE08f33d8e9f" alt="" />
+      </div>
+     </div>
+     <div id="WE2d17ef9763" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1010">
+      <div class="OESZ OESZ_DivContent OESZG_WE2d17ef9763">
+       <span class="ContentBox">A Game About Learning to Speak<br /></span>
+      </div>
+     </div>
+     <div id="WEd36f506081" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1011">
+      <div class="OESZ OESZ_DivContent OESZG_WEd36f506081">
+       <span class="ContentBox">The game simulates a device called the Voder developped by Homer Dudley in 1939. <a href="https://www.youtube.com/watch?v=TsdOej_nC1M" onclick="window.open(this.href);return false">Here is a video showing the device in action</a>. The controls of the game involve producing 2 synthesized tones and filtering them to produce vocalised noises like the voder. &nbsp;There are 10 filter keys at the top of the keyboard (q-p) , space is used to toggle between the tones, and control toggles playback. &nbsp;<br /></span>
+      </div>
+     </div>
+     <div id="WE1b42ee79d1" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:1012">
+      <div class="OESZ OESZ_DivContent OESZG_WE1b42ee79d1">
+       <img src="WEFiles/Image/WEImage/Voder%20game%20controls-WE1b42ee79d1.png" class="OESZ OESZ_Img OESZG_WE1b42ee79d1" alt="" />
+      </div>
+     </div>
+     <div id="WE1e7ff4b30b" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1007">
+      <div class="OESZ OESZ_DivContent OESZG_WE1e7ff4b30b">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WE1e7ff4b30b" alt="" />
+      </div>
+     </div>
+     <div id="WE5f06ed7572" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1013">
+      <div class="OESZ OESZ_DivContent OESZG_WE5f06ed7572">
+       <span class="ContentBox">The 10 filter keys activate a band pass filter ranging from &nbsp;0-255Hz and 5400-7500Hz (the values used in the original voder). This game is set in a call centre and gains its enjoyability from the difficulty placed into what would normally be a very mundane task, reading out a piece of information. This concept has worked well in titles like QWOP and Octodad, where the player has to complete day to day tasks like walking or moving around objects with very in depth and difficult to master controls. &nbsp;However, the application of this concept to speech has never been done and there are very few games which explore speech and the intricacies of something we take so forgranted, The player will be placed at a desk in front of a monitor which states which filters to apply for each vocal sound in some kind of visual key. &nbsp;Their screen will also contain a script on a notepad which will contain a flow-chart of what they need to say depending on the user's reply. &nbsp;Below you can see a mock up of what the game would look like. This concept art uses soft pastel like matte textures and dull colours like beige and black as well as the stock images and template design of the tutorial info&nbsp;to create an unsettlingly boring dystopian coorporate atmosphere.<br /></span>
+      </div>
+     </div>
+     <div id="WEfbf20da677" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:1020">
+      <div class="OESZ OESZ_DivContent OESZG_WEfbf20da677">
+       <img src="WEFiles/Image/WEImage/Mock%20Interface%20Final-WEfbf20da677.png" class="OESZ OESZ_Img OESZG_WEfbf20da677" alt="" />
+      </div>
+     </div>
+     <div id="WEf8557b3f6a" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1014">
+      <div class="OESZ OESZ_DivContent OESZG_WEf8557b3f6a">
+       <span class="ContentBox">FM&nbsp;Autochess<br /></span>
+      </div>
+     </div>
+     <div id="WE067465644d" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterAH" style="z-index:1015">
+      <div class="OESZ OESZ_DivContent OESZG_WE067465644d">
+       <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WE067465644d" alt="" />
+      </div>
+     </div>
+     <div id="WEf3b8158cd2" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1016">
+      <div class="OESZ OESZ_DivContent OESZG_WEf3b8158cd2">
+       <span class="ContentBox">A Football Manager mod which adds an autochess mode.<br /></span>
+      </div>
+     </div>
+     <div id="WE83532ea7de" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1017">
+      <div class="OESZ OESZ_DivContent OESZG_WE83532ea7de">
+       <span class="ContentBox">The genre of autochess is one that has a really interesting and satisfying core loop in creating a team who's individual attributes feed into one another and synergise. However, I couldn't get into the genre through it's most popular games as they relied on autobattler combat systems which I found too complex. However the genre doesn't have to necessarily be applied to a battle system and may actually work even better in a sports tactics game as these games often revolve around assembling teams that play well as a colective anyway. I originally planned this game as a stand alone football autochess game but struggled to design the AI, which makes or breaks a game with automatic gameplay. I then realised that the autochess mechanics could be built on top of another game with a match engine and the AI would be done for me. Football Manager is the obvious choice as it already contains many different player types and roles, so all that has to be done to create a unit is give them attributes and a role and the game will make them play a certain way. I can then make the attributes increase when a character is leveled up and make classes which increase attributes of every other unit of that class, the more units of that class you have. Here is a mock up of the team assembling UI.<br /></span>
+      </div>
+     </div>
+     <div id="WE19764eafc0" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:1019">
+      <div class="OESZ OESZ_DivContent OESZG_WE19764eafc0">
+       <img src="WEFiles/Image/WEImage/FM%20Autochess%20UI-WE19764eafc0.png" class="OESZ OESZ_Img OESZG_WE19764eafc0" alt="" />
+      </div>
+     </div>
+     <div id="WEaf71e9c999" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1018">
+      <div class="OESZ OESZ_DivContent OESZG_WEaf71e9c999">
+       <span class="ContentBox">This gamemode may also be a unique and welcome experience to Football Manager players as it allows them to develop a tactic from a random list of players they're gradually given without having to spend time on scouting, recruitment, training and fitness. This mode can distill the gameplay down to just developing a system around the players you get and adding players that fit the system.&nbsp;<br /><br /><a href="Files/Other/FM%20Autochess%20Game%20Plan.pdf" onclick="window.open(this.href);return false">Here is my plan for the characters and the mechanics of the game.</a><br /></span>
+      </div>
+     </div>
+    </div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs">
+     <div id="WEada614a9f0" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH navigArrow2 naUp" style="z-index:1003">
+      <div class="OESZ OESZ_DivContent OESZG_WEada614a9f0">
+       <a class="OESZ OESZ_Link OESZG_WEada614a9f0 ContentBox" data-cd="PageLink"><br /></a>
+      </div>
+     </div>
+     <div id="WE7710d8691f" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH navigArrow2 naDown" style="z-index:1002">
+      <div class="OESZ OESZ_DivContent OESZG_WE7710d8691f">
+       <a class="OESZ OESZ_Link OESZG_WE7710d8691f ContentBox" data-cd="PageLink"><br /></a>
+      </div>
+     </div>
+     <div id="WE645908ba36" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterAH" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WE645908ba36">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WEa0ae6cfc88" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WEa0ae6cfc88">
+          <span class="OESZ OESZ_Text OESZG_WEa0ae6cfc88 ContentBox">Matthew Hill 2021</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(["WEFiles/Image/Skin/f72ffa6d.png","WEFiles/Image/Skin/0db815a6.png","WEFiles/Image/Skin/962e1fc1.png"]).preloadImg();
+  </script>
+ </body>
+</html>

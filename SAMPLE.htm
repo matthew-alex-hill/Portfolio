@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="WEFiles/Css/v02/openElement.css?v=50491123200" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=50491123200" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=50491123200" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="SAMPLE.css?v=50491123200" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=50491123200" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"SAMPLE","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"","RenderMode":"Export","PageAssociatePath":"SAMPLE","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/1.10.2.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=50491123200"></script>
+  <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=50491123200"></script>
+  <style id="OEScriptManager" type="text/css">
+   .responsiveSection,.respSectContent{position:relative!important;left:auto!important;top:auto!important}
+   .responsiveSection{height:auto!important;display:block!important;margin-left:auto;margin-right:auto}
+   .heightAuto{height:auto!important}
+   .width100{width:100%!important}
+   .devNotice{display:none}
+   .topMainContainer{background:none!important;position:fixed!important;top:0;left:0!important;width:100%!important;height:0!important;z-index:10000!important}
+   .autoMenu{width:100%!important;left:0!important;display:none}
+   .navigArrow,.navigArrow2{position:fixed!important;z-index:100000!important}
+   .navigArrow2.naUp{top:80px!important}
+   #XBody .OESZ_XBodyContent {
+     height:	auto;
+   }
+  </style>
+  <script type="text/javascript">
+   $(function(){WECB_Cent01_General.Init();WECB_Cent01_TopContainer.Init()});var WECB_Cent01_General={Init:function(){this.fixIFramOE();this.findElements();this.fixAndRedimension()},_IEVers:function(){var e=navigator.userAgent.toLowerCase();return e.indexOf("msie")!=-1?parseInt(e.split("msie")[1]):false},fixIFramOE:function(){var e=$("iframe").filter(function(){var e=$(this),t=e.attr("src");return t&&t.indexOf("headerModels.htm")>0});if(e.length){if(e.position().top===0&&$(".panelTopSub").length){$("<div>").css("height",parseInt($(".panelTopSub").height())+"px").insertBefore(e)}}},findElements:function(){this.$allSections=$(".responsiveSection");this.InitOk=true},fixAndRedimension:function(){$(".height_minus8").each(function(){$(this).height(parseInt($(this).height())-8)});$(".top_minus8").each(function(){$(this).css("top",parseInt($(this).css("top"))-8+"px")});$(".top_plus40").each(function(){$(this).css("top",parseInt($(this).css("top"))+40+"px")});$(".leftAuto").each(function(){$(this).css("left","auto")});this.anchorMinY=1e6;this.anchorMaxY=-100;this.$anchorFirst=null;this.$anchorLast=null;var e=0;this.$anchors=$("a").filter(function(){var t=$(this);var n=t.attr("href"),r=t.attr("id"),i=t.attr("name");if(!n&&r&&r===i){var s=t.offset().top;if(s<WECB_Cent01_General.anchorMinY){WECB_Cent01_General.anchorMinY=s;WECB_Cent01_General.$anchorFirst=t}if(s>WECB_Cent01_General.anchorMaxY){WECB_Cent01_General.anchorMaxY=s;WECB_Cent01_General.$anchorLast=t}e++;if(i>="a1"&&(i<="a99"||i==="ax")){t.attr("id","a"+e).attr("name","a"+e)}return true}else return false});var t=this._IEVers();if(t&&t<=9){$(".textShadowIE").find(".ContentBox").css("filter","progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)")}},updateAnchorsMinMaxY:function(){if(this.$anchorFirst!==null){this.anchorMinY=this.$anchorFirst.offset().top;this.anchorMaxY=this.$anchorLast.offset().top}},resizeSectionContainers:function(){var e=this.displayHeight;this.$allSections.each(function(){var t=this;if(!t.sub){t.sub=$(t).find(".respSectContent");t.sub.margin1=parseInt(t.sub.css("margin-top"));t.sub.margin2=parseInt(t.sub.css("margin-bottom"))}if(!t.sub.length)return true;var n=parseInt(t.sub.height());var r=(e-n)/2|0;t.sub.css({"margin-top":(r>t.sub.margin1?r:t.sub.margin1)+"px","margin-bottom":(r>t.sub.margin2?r:t.sub.margin2)+"px"})})},smoothScrollTo:function(e){$("html, body").animate({scrollTop:e},500)},changeVisibility:function(e,t,n){if(t!=n){e.toggle(n)}return n}};var WECB_Cent01_TopContainer={Init:function(){this.findElements();this.fixAndRedimension();this.topMenuInit();this.eventHandlers();this.buttons()},findElements:function(){this.$panelTopMain=$(".topMainContainer");this.$panelTopSub=$(".panelTopSub");this.$topMenuSubContainer=$(".topMenuSub");this.$topMenuLinks=$(".topMenuLink");this.$btRetract=$(".btRetract");this.$logoBig=$(".logoBig");this.$logoSmall=$(".logoSmall");this.$miniMenuButton=$(".miniMenuButton");this.$navArrowUp=$(".navigArrow.naUp");this.$navArrowDown=$(".navigArrow.naDown");this.$navArrowUpCent=$(".navigArrow2.naUp");this.$navArrowDownCent=$(".navigArrow2.naDown");this.navArrowUpVisible=false;this.navArrowDownVisible=false;this.navArrowUpCentVisible=false;this.navArrowDownCentVisible=false;this.$autoMenu=$(".autoMenu");this.autoMenuVisible=false;this.autoMenuHeight=0;this.$allSections=WECB_Cent01_General.$allSections;this.alwaysMinimizeMenu=this.$panelTopSub.hasClass("topMinimize");this.topMenuAlignRight=this.$topMenuSubContainer.hasClass("modeAlignRight");this.InitOk=true},fixAndRedimension:function(){var e=!!this.$btRetract.length;this.panelTopSubHeight=parseInt(this.$panelTopSub.height());this.retractButtonY=e?parseInt(this.$btRetract.css("top")):this.panelTopSubHeight;this.topMenuWidth=parseInt(this.$topMenuSubContainer.width());this.logoSmallWidth=this.$logoSmall.length?parseInt(this.$logoSmall.offset().left)+parseInt(this.$logoSmall.width()):0;this.miniMenuButton_origX=parseInt(this.$miniMenuButton.css("left"));this.topMenuY=this.$topMenuSubContainer.length?this.$topMenuSubContainer.position().top:0;this.panelTopMain_Minimized=this.alwaysMinimizeMenu;if(this.alwaysMinimizeMenu){this.retractContainer(true,false,true)}},topMenuInit:function(){this.$autoMenu.find(".BaseDiv").attr("onclick","");var e=this.$autoMenu.find(".BaseDiv.OEWELink").children("div");if(e.length===1){var t=e.attr("id"),n=0;this.$topMenuLinks.find("a").each(function(){n+=1;var t=$(this).attr("href"),r=$(this).html();var i=e.clone();i.css("white-space","nowrap").find("a").attr("href",t).html(r);i.appendTo(e.parent());i.hover(function(){$(this).addClass("OE_Over")},function(){$(this).removeClass("OE_Over")})});e.remove()}this.autoMenuHeight=this.$autoMenu.height()},eventHandlers:function(){$(window).bind("load resize",function(){WECB_Cent01_TopContainer.onResizeWindow()}).trigger("resize");this.smallLogoVisibility();this.onScrollWindow();$(window).scroll(function(){WECB_Cent01_TopContainer.onScrollWindow()});$("a").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible){WECB_Cent01_TopContainer.openAutoMenu(false)}var e=$(this).attr("href");if(e&&e.indexOf("#")===0&&e.length>=2&&$(e).length){WECB_Cent01_General.smoothScrollTo($(e).offset().top);return false}})},buttons:function(){if(this.$btRetract.length){this.$btRetract.find("a").attr("href","").css("display","none");this.$btRetract.click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);else WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized)})}this.$miniMenuButton.click(function(){if(!WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(true);return false});$(".closeMenu").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);return false});$(".navigArrow, .navigArrow2").click(function(){var e=parseInt($(document).scrollTop());var t=$(this).hasClass("naUp");var n=e;WECB_Cent01_General.$anchors.each(function(){var r=$(this).offset().top;if(!t){if(r>e+40&&(n===e||n>r)){n=r}}else{if(r<e&&(n===e||n<r)){n=r}}});if(n!=e)WECB_Cent01_General.smoothScrollTo(n)})},openAutoMenu:function(e){var t=this.$autoMenu;var n=this.$panelTopMain;if(e!==true){t.hide(500);this.autoMenuVisible=false}else{t.show(500);this.autoMenuVisible=true}this.retractContainer();this.menuModeControl()},retractContainer:function(e,t,n){if(e===undefined)e=this.panelTopMain_Minimized;if(this.alwaysMinimizeMenu)e=true;if(t===undefined)t=this.autoMenuVisible;var r=this.$panelTopMain;var i=e?-this.topMenuY:0;var s=parseInt(r.css("top"));if(!this.alwaysMinimizeMenu){var o=e&&!t?"center bottom":"center top";this.$btRetract.css("background-position",o)}if(!t){if(s>0){r.stop().css("top",0)}}else{var u=this.$autoMenu;var a=this.autoMenuHeight?this.autoMenuHeight:parseInt(u.height());var f=this.retractButtonY-a;u.css("top",f+"px");i=-f}this.panelTopMain_Minimized=e;r.stop().animate({top:i},n?0:500,function(){WECB_Cent01_TopContainer.smallLogoVisibility()});if(!e)this.smallLogoVisibility()},smallLogoVisibility:function(){if(!this.InitOk)return;this.$logoSmall.toggle(this.panelTopMain_Minimized);this.$logoBig.toggle(!this.panelTopMain_Minimized&&!this.autoMenuVisible);this.menuModeControl()},menuModeControl:function(){if(this.autoMenuVisible){this.$topMenuSubContainer.hide();this.$miniMenuButton.hide();return}var e=parseInt(this.$panelTopMain.width());if(this.panelTopMain_Minimized)e-=this.logoSmallWidth*(this.topMenuAlignRight?1:2);var t=e<this.topMenuWidth+8;if(t){this.$topMenuSubContainer.hide();this.$miniMenuButton.show()}else{this.$topMenuSubContainer.show();this.$miniMenuButton.hide()}},onScrollWindow:function(){if(!this.InitOk)return;var e=parseInt($(document).scrollTop());var t=e>0;var n=this.panelTopMain_Minimized;if(t!==n){this.retractContainer(!n)}var r=e-40<WECB_Cent01_General.anchorMinY||WECB_Cent01_General.anchorMaxY<0;var i=e-80+WECB_Cent01_General.displayHeight>WECB_Cent01_General.anchorMaxY||WECB_Cent01_General.anchorMaxY<0;this.navArrowUpCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUpCent,this.navArrowUpCentVisible,!r&&!this.disableCenterArrows);this.navArrowUpVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUp,this.navArrowUpVisible,!r);this.navArrowDownCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDownCent,this.navArrowDownCentVisible,!i&&!this.disableCenterArrows);this.navArrowDownVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDown,this.navArrowDownVisible,!i)},onResizeWindow:function(){WECB_Cent01_General.displayHeight=$(window).height();if(!this.InitOk)return;this.disableCenterArrows=WECB_Cent01_General.displayHeight<640;this.menuModeControl();var e=parseInt($(document).scrollTop());var t=$(document).height();WECB_Cent01_General.resizeSectionContainers();var n=parseInt($(document).scrollTop());if(n==e){var r=$(document).height();if(t&&r&&r!=t){var i=r/t;n=parseInt(n+n/r*(r-t)*40)}}WECB_Cent01_General.updateAnchorsMinMaxY();this.onScrollWindow()}};
+  </script>
+  <meta name="robots" content="noindex, nofollow">
+ </head>
+ <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RWidth OEPageXbody OESK_XBody_Default" style="z-index:1000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTAbs">
+     <div id="WE756f8065f6" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1008">
+      <div class="OESZ OESZ_DivContent OESZG_WE756f8065f6">
+       <span class="ContentBox">This page contains examples of "sections" that you can copy-paste onto your home page (or any other "responsive" page) and then modify as needed.&nbsp;<br /> &nbsp;<br />&nbsp;- Select the external panel of a section (the one with a background image or color)<br />&nbsp;- Right-click + Copy;&nbsp;<br />&nbsp;- On the target page (e.g. home page), right-click + Paste onto the element-free area.<br /> &nbsp;<br />For more information,&nbsp;please consult the Wiki .</span>
+      </div>
+     </div>
+     <div id="WE42ca817640" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection textShadowIE" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WE42ca817640">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WEb3ebd47cab" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WEb3ebd47cab">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE704619c449" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE704619c449">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE5e91483874" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE5e91483874">
+              <span class="ContentBox"> AT VERO EOS ET ACCUSAMUS <br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE0ac5e55e42" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1002">
+             <div class="OESZ OESZ_DivContent OESZG_WE0ac5e55e42">
+              <span class="ContentBox">At vero eos et accusamus&nbsp;At vero eos et accusamus<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE21b3e2f9e2" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection" style="z-index:1002">
+      <div class="OESZ OESZ_DivContent OESZG_WE21b3e2f9e2">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WE9625f58ace" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WE9625f58ace">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE6a46fe279c" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE6a46fe279c">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE27f2e5a9d5" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE27f2e5a9d5">
+              <span class="ContentBox">SED UT PERSPICIATIS UNDE&nbsp;<br /> SIT VOLUPTATEM ACCUSANTIUM DOLOREMQUE&nbsp;<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE7b897c8fa1" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1002">
+             <div class="OESZ OESZ_DivContent OESZG_WE7b897c8fa1">
+              <span class="ContentBox">i velit, sed quia non numquam ei i velit, sed quia non numquam eii velit, sed quia non numquam ei<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEcaee7bae50" class="BaseDiv RBoth OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WEcaee7bae50">
+              <img src="Files/Image/Slide1-trait-separation.png" class="OESZ OESZ_Img OESZG_WEcaee7bae50" alt="" />
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEf97e7e5944" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WEf97e7e5944">
+              <span class="ContentBox"><img src="Files/Image/icone-demo.png" style="vertical-align: text-top; float: left; margin-right: 4px; margin-bottom: 4px; " />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WEb8bd213af3" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection textShadowIE" style="z-index:1003">
+      <div class="OESZ OESZ_DivContent OESZG_WEb8bd213af3">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WE9568d81ada" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WE9568d81ada">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE212b93abd8" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE212b93abd8">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE3e38b4a54d" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE3e38b4a54d">
+              <span class="ContentBox">The panels below are always placed one under another<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEdef5199c0e" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WEdef5199c0e">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WEe0c76476da" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WEe0c76476da">
+                  <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WEe0c76476da" alt="" />
+                 </div>
+                </div><div id="WEcf15338636" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WEcf15338636">
+                  <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE4223c39bef" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE4223c39bef">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WE4cb528800c" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WE4cb528800c">
+                  <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WE4cb528800c" alt="" />
+                 </div>
+                </div><div id="WEdb8495e5b6" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WEdb8495e5b6">
+                  <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEa65b43385f" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1005">
+             <div class="OESZ OESZ_DivContent OESZG_WEa65b43385f">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WEac0897c332" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WEac0897c332">
+                  <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WEac0897c332" alt="" />
+                 </div>
+                </div><div id="WE92c7ae4a0e" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WE92c7ae4a0e">
+                  <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE3296130de6" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1006">
+             <div class="OESZ OESZ_DivContent OESZG_WE3296130de6">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WE10b43c60a3" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WE10b43c60a3">
+                  <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WE10b43c60a3" alt="" />
+                 </div>
+                </div><div id="WE6da476c7bc" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WE6da476c7bc">
+                  <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE139b9d9772" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1006">
+             <div class="OESZ OESZ_DivContent OESZG_WE139b9d9772">
+              <span class="ContentBox">i velit, sed quia non numquam ei i velit, sed quia non numquam eii velit, sed quia non numquam ei<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE9e28286ed1" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection textShadowIE" style="z-index:1004">
+      <div class="OESZ OESZ_DivContent OESZG_WE9e28286ed1">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WE79eb8329cc" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WE79eb8329cc">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE0f82b3c0b3" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE0f82b3c0b3">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE46a9ea58f3" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE46a9ea58f3">
+              <span class="ContentBox">The panels below are placed horizontally when there is enough space<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE4d52b165e5" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1007">
+             <div class="OESZ OESZ_DivContent OESZG_WE4d52b165e5">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WEc63e055fee" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WEc63e055fee">
+                  <div class="OECT OECT_Content OECTRel OEDynTag0">
+                   <div class="OERelLine OEHAlignC OEVAlignM">
+                    <div id="WEa4f7ff5f05" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                     <div class="OESZ OESZ_DivContent OESZG_WEa4f7ff5f05">
+                      <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WEa4f7ff5f05" alt="" />
+                     </div>
+                    </div><div id="WE464c148352" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                     <div class="OESZ OESZ_DivContent OESZG_WE464c148352">
+                      <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE96236287f0" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1002">
+                 <div class="OESZ OESZ_DivContent OESZG_WE96236287f0">
+                  <div class="OECT OECT_Content OECTRel OEDynTag0">
+                   <div class="OERelLine OEHAlignC OEVAlignM">
+                    <div id="WEe10c5cdf3d" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                     <div class="OESZ OESZ_DivContent OESZG_WEe10c5cdf3d">
+                      <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WEe10c5cdf3d" alt="" />
+                     </div>
+                    </div><div id="WEb808acc91c" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                     <div class="OESZ OESZ_DivContent OESZG_WEb808acc91c">
+                      <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE92bce6b41a" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WE92bce6b41a">
+                  <div class="OECT OECT_Content OECTRel OEDynTag0">
+                   <div class="OERelLine OEHAlignC OEVAlignM">
+                    <div id="WE6d18420da5" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                     <div class="OESZ OESZ_DivContent OESZG_WE6d18420da5">
+                      <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WE6d18420da5" alt="" />
+                     </div>
+                    </div><div id="WE5ea341d3ca" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                     <div class="OESZ OESZ_DivContent OESZG_WE5ea341d3ca">
+                      <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE22f935b265" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1004">
+                 <div class="OESZ OESZ_DivContent OESZG_WE22f935b265">
+                  <div class="OECT OECT_Content OECTRel OEDynTag0">
+                   <div class="OERelLine OEHAlignC OEVAlignM">
+                    <div id="WE56c5522300" class="BaseDiv RNone OEWEImage OESK_WEImage_Default OECenterRH" style="z-index:1001">
+                     <div class="OESZ OESZ_DivContent OESZG_WE56c5522300">
+                      <img src="Files/Image/icone-demo.png" class="OESZ OESZ_Img OESZG_WE56c5522300" alt="" />
+                     </div>
+                    </div><div id="WE1e3060539e" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+                     <div class="OESZ OESZ_DivContent OESZG_WE1e3060539e">
+                      <span class="ContentBox">This text is placed to the right of the image when there is enough space, or under the image otherwise.<br /></span>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEa80ed3e181" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1006">
+             <div class="OESZ OESZ_DivContent OESZG_WEa80ed3e181">
+              <span class="ContentBox">i velit, sed quia non numquam ei i velit, sed quia non numquam eii velit, sed quia non numquam ei<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE51d4778805" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection" style="z-index:1005">
+      <div class="OESZ OESZ_DivContent OESZG_WE51d4778805">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WE59dba3a98a" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WE59dba3a98a">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WEafa86526c1" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WEafa86526c1">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE9bce5b8e94" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE9bce5b8e94">
+              <span class="ContentBox">The content below is placed horizontally when there is enough space<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WEa200bc369f" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1005">
+             <div class="OESZ OESZ_DivContent OESZG_WEa200bc369f">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WEdbed52f534" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1005">
+                 <div class="OESZ OESZ_DivContent OESZG_WEdbed52f534">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WEe65c7d6dfe" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OECenterAH" style="z-index:1001" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WEe65c7d6dfe">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WE1efd910459" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1002">
+                    <div class="OESZ OESZ_DivContent OESZG_WE1efd910459">
+                     <span class="OESZ OESZ_Text OESZG_WE1efd910459 ContentBox">This text always stays under the image</span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE38a5469c53" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1007">
+                 <div class="OESZ OESZ_DivContent OESZG_WE38a5469c53">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WE6e8aabbeda" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OECenterAH" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WE6e8aabbeda">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WEf3625ae0e9" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+                    <div class="OESZ OESZ_DivContent OESZG_WEf3625ae0e9">
+                     <span class="OESZ OESZ_Text OESZG_WEf3625ae0e9 ContentBox">This text always stays under the image</span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE6fb205a520" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1007">
+                 <div class="OESZ OESZ_DivContent OESZG_WE6fb205a520">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WE71892943e5" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OECenterAH" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WE71892943e5">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WE8e855b7baa" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+                    <div class="OESZ OESZ_DivContent OESZG_WE8e855b7baa">
+                     <span class="OESZ OESZ_Text OESZG_WE8e855b7baa ContentBox">This text always stays under the image</span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WEc9b12f594d" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1007">
+                 <div class="OESZ OESZ_DivContent OESZG_WEc9b12f594d">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WEb9e7a05966" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo OECenterAH" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WEb9e7a05966">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WEe8c7c602bc" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1001">
+                    <div class="OESZ OESZ_DivContent OESZG_WEe8c7c602bc">
+                     <span class="OESZ OESZ_Text OESZG_WEe8c7c602bc ContentBox">This text always stays under the image</span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE1c48caf757" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WE1c48caf757">
+              <span class="ContentBox">ACCUSANTIUM DOLOREMQUE<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE7c77e4bfc6" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection textShadowIE" style="z-index:1006">
+      <div class="OESZ OESZ_DivContent OESZG_WE7c77e4bfc6">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WE3aa81e19a2" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE3aa81e19a2">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE242e0387e6" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WE242e0387e6">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE3ccc219064" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WE3ccc219064">
+              <span class="ContentBox">The content below is placed horizontally when there is enough space<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE1a29ad0e96" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WE1a29ad0e96">
+              <div class="OECT OECT_Content OECTRel OEDynTag0">
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WE6312a784fe" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1001">
+                 <div class="OESZ OESZ_DivContent OESZG_WE6312a784fe">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WEf6ab79c066" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WEf6ab79c066">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WEce1b82288f" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:1002">
+                    <div class="OESZ OESZ_DivContent OESZG_WEce1b82288f">
+                     <span class="ContentBox">This text always stays on the right, but adapts its width to the window size. Use Styles-Customize to modify the relative width.</span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WEd00dd68b3b" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1002">
+                 <div class="OESZ OESZ_DivContent OESZG_WEd00dd68b3b">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WEd8ae24a562" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WEd8ae24a562">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WEd363746a76" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:1002">
+                    <div class="OESZ OESZ_DivContent OESZG_WEd363746a76">
+                     <span class="ContentBox"> This text always stays on the right, but adapts its width to the window size. Use Styles-Customize to modify the relative width. </span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="OERelLine OEHAlignC OEVAlignM">
+                <div id="WE40366383a4" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1003">
+                 <div class="OESZ OESZ_DivContent OESZG_WE40366383a4">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WE4889b4549d" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WE4889b4549d">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WE922617c93a" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:1002">
+                    <div class="OESZ OESZ_DivContent OESZG_WE922617c93a">
+                     <span class="ContentBox"> This text always stays on the right, but adapts its width to the window size. Use Styles-Customize to modify the relative width. </span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div><div id="WE64c5bce3dd" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1004">
+                 <div class="OESZ OESZ_DivContent OESZG_WE64c5bce3dd">
+                  <div class="OECT OECT_Content OECTAbs OEDynTag0">
+                   <div id="WEd93d15eb9e" class="BaseDiv RBoth OEWELinkImage OESK_WELinkImage_Default OEGo" style="z-index:1002" onclick="return OE.Navigate.open(event,'SAMPLE.htm',1)">
+                    <div class="OESZ OESZ_DivContent OESZG_WEd93d15eb9e">
+                     <img style="width:100%;height:100%;border:none" src="WEFiles/Image/empty.png" />
+                    </div>
+                   </div>
+                   <div id="WE11f9fc4686" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:1002">
+                    <div class="OESZ OESZ_DivContent OESZG_WE11f9fc4686">
+                     <span class="ContentBox"> This text always stays on the right, but adapts its width to the window size. Use Styles-Customize to modify the relative width. </span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE9d7d7b4cdb" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WE9d7d7b4cdb">
+              <span class="ContentBox">SED UT PERSPICIATIS UNDE&nbsp;SIT VOLUPTATEM ACCUSANTIUM<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="WE80517ad46c" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default  responsiveSection" style="z-index:1007">
+      <div class="OESZ OESZ_DivContent OESZG_WE80517ad46c">
+       <div class="OECT OECT_Content OECTAbs OEDynTag0">
+        <div id="WEf423c3dfed" class="BaseDiv RNone OEWECodeBlock OESK_WECodeBlock_Default" style="z-index:1002">
+         <div class="OESZ OESZ_DivContent OESZG_WEf423c3dfed">
+          <a id='ax' name='ax'>&nbsp;&nbsp;</a>
+         </div>
+        </div>
+        <div id="WE76331b7182" class="BaseDiv RWidth OEWEPanel OESK_WEPanel_Default OECenterAH respSectContent" style="z-index:1001">
+         <div class="OESZ OESZ_DivContent OESZG_WE76331b7182">
+          <div class="OECT OECT_Content OECTRel OEDynTag0">
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE137c487f55" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE137c487f55">
+              <span class="ContentBox">CONTACT<br /></span>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE6c3269ed51" class="BaseDiv RBoth OEWEPanel OESK_WEPanel_Default OECenterRH" style="z-index:1004">
+             <div class="OESZ OESZ_DivContent OESZG_WE6c3269ed51">
+              <div class="OECT OECT_Content OECTAbs OEDynTag0">
+               <div id="WE8d84f06cc8" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1004">
+                <div class="OESZ OESZ_DivContent OESZG_WE8d84f06cc8">
+                 <span class="OESZ OESZ_Text OESZG_WE8d84f06cc8 ContentBox">Lorem Ipsum</span>
+                </div>
+               </div>
+               <div id="WE5463b4f31c" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default OECenterAH inputBoxSizing" style="z-index:1002">
+                <div class="OESZ OESZ_DivContent OESZG_WE5463b4f31c">
+                 <input name="WE5463b4f31c" type="text" class="OESZ OESZ_TextBox OESZG_WE5463b4f31c OEDynTag0" />
+                </div>
+               </div>
+               <div id="WEdf1888dc4b" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1005">
+                <div class="OESZ OESZ_DivContent OESZG_WEdf1888dc4b">
+                 <span class="OESZ OESZ_Text OESZG_WEdf1888dc4b ContentBox">Lorem Ipsum</span>
+                </div>
+               </div>
+               <div id="WEb2e359c61b" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default OECenterAH inputBoxSizing" style="z-index:1009">
+                <div class="OESZ OESZ_DivContent OESZG_WEb2e359c61b">
+                 <input name="WEb2e359c61b" type="text" class="OESZ OESZ_TextBox OESZG_WEb2e359c61b OEDynTag0" />
+                </div>
+               </div>
+               <div id="WE474db6f152" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1006">
+                <div class="OESZ OESZ_DivContent OESZG_WE474db6f152">
+                 <span class="OESZ OESZ_Text OESZG_WE474db6f152 ContentBox">Lorem Ipsum</span>
+                </div>
+               </div>
+               <div id="WE2fecd85dbb" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default OECenterAH inputBoxSizing" style="z-index:1010">
+                <div class="OESZ OESZ_DivContent OESZG_WE2fecd85dbb">
+                 <input name="WE2fecd85dbb" type="text" class="OESZ OESZ_TextBox OESZG_WE2fecd85dbb OEDynTag0" />
+                </div>
+               </div>
+               <div id="WEeb713d49b1" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1007">
+                <div class="OESZ OESZ_DivContent OESZG_WEeb713d49b1">
+                 <span class="OESZ OESZ_Text OESZG_WEeb713d49b1 ContentBox">Lorem Ipsum</span>
+                </div>
+               </div>
+               <div id="WE8a01985835" class="BaseDiv RWidth OEWETextBoxV2 OESK_WETextBox2_Default OECenterAH inputBoxSizing" style="z-index:1011">
+                <div class="OESZ OESZ_DivContent OESZG_WE8a01985835">
+                 <input name="WE8a01985835" type="text" class="OESZ OESZ_TextBox OESZG_WE8a01985835 OEDynTag0" />
+                </div>
+               </div>
+               <div id="WE07199944ed" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1008">
+                <div class="OESZ OESZ_DivContent OESZG_WE07199944ed">
+                 <span class="OESZ OESZ_Text OESZG_WE07199944ed ContentBox">Lorem Ipsum</span>
+                </div>
+               </div>
+               <div id="WEe26d56f40b" class="BaseDiv RBoth OEWETextAreaV2 OESK_WETextArea2_Default OECenterAH inputBoxSizing" style="z-index:1003">
+                <div class="OESZ OESZ_DivContent OESZG_WEe26d56f40b">
+                 <textarea class="OESZ OESZ_TextArea OESZG_WEe26d56f40b OEDynTag0" name="WEe26d56f40b" rows="3" cols="50"></textarea>
+                </div>
+               </div>
+               <div id="WEff7c8db9e4" class="BaseDiv RWidth OEWEButton OESK_WEButton_Default OECenterAH" style="z-index:1001">
+                <div class="OESZ OESZ_DivContent OESZG_WEff7c8db9e4">
+                 <button class="OESZ OESZ_Button OESZG_WEff7c8db9e4 OEo OEDynTag0" type="button" name="WEff7c8db9e4">Send</button>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="OERelLine OEHAlignC OEVAlignB">
+            <div id="WE8b2a10bcc4" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterRH" style="z-index:1003">
+             <div class="OESZ OESZ_DivContent OESZG_WE8b2a10bcc4">
+              <span class="ContentBox">SED UT PERSPICIATIS UNDE&nbsp;SIT VOLUPTATEM ACCUSANTIUM<br /></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs"></div>
+   </div>
+  </div>
+ </body>
+</html>
