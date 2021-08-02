@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.57.9)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="../WEFiles/Css/v02/openElement.css?v=50491123200" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="../Files/Fonts/Fonts.css?v=50491123200" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="Base_Scripts_Uncompressed.css?v=50491123200" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="../WEFiles/Css/ie7.css?v=50491123200" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"Templates/Base_Scripts_Uncompressed","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"../","RenderMode":"Export","PageAssociatePath":"Templates/Base_Scripts_Uncompressed","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/1.10.2.js?v=50491123200"></script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/migrate.js?v=50491123200"></script>
+  <script type="text/javascript" src="../WEFiles/Client/Common/oe.min.js?v=50491123200"></script>
+  <style id="OEScriptManager" type="text/css">
+   /* Responsive Section (100% window size) and their content subcontainers */
+   
+   .responsiveSection, .respSectContent {
+       position: 	relative !important; 
+       left: 		auto !important; 
+       top: 		auto !important; 
+   }
+   
+   .responsiveSection {
+   	height: 	auto !important;
+       display: 	block !important;
+       margin-left: 	auto; 
+       margin-right:	auto; 
+   }
+   
+   
+   /* Special classes-modifiers of CSS */
+   
+   .heightAuto     { height: auto !important; }    /* adapt height to contents */
+   .width100       { width: 100% !important; }
+   .devNotice      { display: none; }              /* Site developer's notice - invisible in browser */
+   
+   
+   /* Top Retractable Menu & Logo */
+   
+   .topMainContainer { 	/* top floating footer panel */
+     background: 		none !important;
+     position:			fixed !important;
+     top: 				0;
+     left: 			0 !important;
+     width: 			100% !important;
+     height:			0 !important;
+     z-index: 			10000 !important;
+   }
+   
+   .autoMenu {
+     width: 			100% !important;
+     left:				0 !important;
+     display: 			none;
+   }
+   
+   
+   /* Navigation Arrows */
+   
+   .navigArrow, .navigArrow2 {	/* Navigation arrows at the bottom-right and in the center */
+     position:			fixed !important;
+     z-index: 			100000 !important;
+   }
+   
+   .navigArrow2.naUp { /* top-center navigation arrow */
+     top: 	 			80px !important;
+   }
+  </style>
+  <script type="text/javascript">
+   $(function(){ 
+     
+     WECB_Cent01_General.Init();
+     
+     WECB_Cent01_TopContainer.Init(); 
+   
+   }); // initialize page control code
+   
+   
+   
+   //   The code below handles responsive sections and the top retractable container (logo + menu)
+   
+   //   Sections: adapt height, correct corresponding anchor's id/name
+   
+   //   Top menu: control states - normal (sometimes disabled), minimized, 
+   //   "automenu" (shows list of all links from the horisontal menu when there is not enough space for it)
+   
+   //   Note: it is recommended to "minimize" this code (becomes appr. 2 times lighter)
+   
+   
+   
+   
+   var WECB_Cent01_General = {
+     // Handles responsive "sections", corresponding anchors, special classes that modify CSS, etc.
+     
+     
+   Init: function(){
+   
+     this.fixIFrameOE();
+     
+     this.findElements();  
+   
+     this.fixAndRedimension();
+     
+   },
+   
+     
+   _IEVers: function(){ // return IE version, for IE between 6 and 10 (for 11 returns False like for non-IE browsers)
+     var _nav = navigator.userAgent.toLowerCase();
+     return (_nav.indexOf('msie') != -1) ? parseInt(_nav.split('msie')[1]) : false;
+   
+   },
+     
+     
+   fixIFrameOE: function() {
+     // check if OE model iframe is added:
+     var $ifrm = $('iframe').filter(function(){ 
+       var $this = $(this), asrc = $this.attr('src');
+       return (asrc && asrc.indexOf('headerModels.htm') > 0); 
+     });
+     
+     if ($ifrm.length) {
+       // shift iframe down so that it is not hidden by top menu
+       if ($ifrm.position().top === 0 && $('.panelTopSub').length) {
+         $('<div>').css('height', parseInt($('.panelTopSub').height())+'px').insertBefore($ifrm);     
+       }
+     }
+     
+     
+   },
+     
+   findElements: function() {
+     
+     this.$allSections	= $('.responsiveSection'); // all containers that represent "sections", should take 100% width and when possible 100% window height
+     
+     this.InitOk = true;
+   
+   },
+     
+     
+   fixAndRedimension: function() {
+       
+     // shift/resize elements where specified by classes:
+     $('.height_minus8').each(function(){	$(this).height(parseInt($(this).height())-8); });
+     $('.top_minus8').each(function(){		$(this).css('top',(parseInt($(this).css('top'))-8)+'px'); });
+     $('.top_plus40').each(function(){		$(this).css('top', (parseInt($(this).css('top'))+40)+'px'); });
+     $('.leftAuto').each(function(){		$(this).css('left', 'auto'); });
+     
+     
+     // find all ANCHORS and their min and max y coordinate //
+     this.anchorMinY = 1000000; this.anchorMaxY = -100; // topmost and bottommost anchors' coordinates
+     this.$anchorFirst = null; this.$anchorLast = null;
+     var anchorCounter = 0; // used to correctly increment anchor name when name = "a#"
+     this.$anchors = $('a').filter(function(){
+       var $this = $(this); var href = $this.attr('href'), id = $this.attr('id'), name = $this.attr('name');
+       if (!href && id && id === name) { // this is an anchor
+         var yy = $this.offset().top; 
+         if (yy < WECB_Cent01_General.anchorMinY) { WECB_Cent01_General.anchorMinY = yy; WECB_Cent01_General.$anchorFirst = $this; }
+         if (yy > WECB_Cent01_General.anchorMaxY) { WECB_Cent01_General.anchorMaxY = yy; WECB_Cent01_General.$anchorLast = $this; }
+         
+         anchorCounter++;
+         if (name >= 'a1' && (name <= 'a99' || name === 'ax')) { // if name = a# or ax, put the correct section number
+           $this.attr('id', 'a' + anchorCounter).attr('name', 'a' + anchorCounter);
+         }
+         
+         return true;
+       } else return false;
+     }); // _______________________________________________
+   
+     
+     // pre-IE10 fix: apply shadow to text using Microsoft filter
+     var ieVers = this._IEVers();
+     if (ieVers && ieVers <= 9) {
+       $('.textShadowIE'). // apply shadow directly to content span (as it is not inherited from parent)
+         find('.ContentBox').
+           css('filter', 'progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)');
+     }
+   },
+     
+   
+   updateAnchorsMinMaxY: function() {
+     if (this.$anchorFirst !== null) {
+       this.anchorMinY = this.$anchorFirst.offset().top; 
+       this.anchorMaxY = this.$anchorLast.offset().top;
+     }
+   },
+     
+   
+   resizeSectionContainers: function() { // keep "sections" sizes according to window dimensions
+     var wH = this.displayHeight; // visible window height
+     this.$allSections.each(function(){
+       var c = this;
+       if (!c.sub) {
+         c.sub = $(c).find('.respSectContent');
+         c.sub.margin1 = parseInt(c.sub.css('margin-top'));
+         c.sub.margin2 = parseInt(c.sub.css('margin-bottom'));
+       }
+       if (!c.sub.length) return true; // no sub-container
+       
+       var sH = parseInt(c.sub.height()); // inner subcontainer's height
+       var dH = ((wH-sH)/2) | 0; // half the difference (integer division)
+       c.sub.css({
+         'margin-top'		: ((dH > c.sub.margin1)?dH:c.sub.margin1)+'px',
+         'margin-bottom'	: ((dH > c.sub.margin2)?dH:c.sub.margin2)+'px'
+       });
+       
+     });
+   },
+     
+    
+   smoothScrollTo: function(yy) { // scroll the page smoothly
+   	$('html, body').animate({ scrollTop: yy }, 500);
+   },
+   
+     
+   changeVisibility: function($el, currVisible, newVisible) {
+   	if (currVisible != newVisible) { $el.toggle(newVisible); }
+   	return newVisible;
+   }
+    
+     
+   };
+   
+   
+   // =======================================================================================
+   
+   
+   var WECB_Cent01_TopContainer = { 
+     // Controls behavior of Top-fixed Retractable container (menu, logo etc.), navigation arrow buttons (jump to next/prev section), links to anchors; handles resize and scroll
+     
+     
+   Init: function(){
+     
+     this.findElements();  
+   
+     this.fixAndRedimension();
+     
+     this.topMenuInit();
+     
+     this.eventHandlers();
+     
+     this.buttons();
+     
+   },
+     
+   
+   findElements: function() {
+     
+     // main elements / tags to control:
+     
+     this.$panelTopMain			= $('.topMainContainer'); // main floating container for top elements
+     this.$panelTopSub				= $('.panelTopSub');	// sub-container, does not contain Retract button
+     this.$topMenuSubContainer		= $('.topMenuSub');		// horisontal panel/group with menu links
+     this.$topMenuLinks			= $('.topMenuLink');	// menu links
+     this.$btRetract				= $('.btRetract');		// Retract button
+     
+     this.$logoBig					= $('.logoBig');
+     this.$logoSmall				= $('.logoSmall');		// small logo visible when big logo is not, and when there is enough space on the left
+     this.$miniMenuButton			= $('.miniMenuButton');	// button that opens "automenu", visible only if browser window is small
+     
+     this.$navArrowUp				= $('.navigArrow.naUp'); // navigation arrows
+     this.$navArrowDown			= $('.navigArrow.naDown');
+     this.$navArrowUpCent			= $('.navigArrow2.naUp');
+     this.$navArrowDownCent		= $('.navigArrow2.naDown');
+     
+     this.navArrowUpVisible		= false; 
+     this.navArrowDownVisible		= false;
+     this.navArrowUpCentVisible	= false; 
+     this.navArrowDownCentVisible	= false;
+   
+     this.$autoMenu				= $('.autoMenu'); // menu auto-filled with links of horizontal menu (shown when minimized menu button is clicked) 
+     this.autoMenuVisible			= false;
+     this.autoMenuHeight			= 0;
+     
+     this.$allSections				= WECB_Cent01_General.$allSections; // all containers that represent "sections", should take 100% width and when possible 100% window height
+     
+     
+     this.alwaysMinimizeMenu		= this.$panelTopSub.hasClass('topMinimize'); // no big logo and no retract button, always minimize menu (except when auto opened)
+     this.topMenuAlignRight		= this.$topMenuSubContainer.hasClass('modeAlignRight'); // if right is specified, menu is at the right page side, not centered
+     this.InitOk = true;
+   
+   },
+     
+     
+   fixAndRedimension: function() {
+     
+     var rbExists = !!(this.$btRetract.length); // retract button exists
+     this.panelTopSubHeight	= parseInt(this.$panelTopSub.height()); // height of horisontal top menu
+     this.retractButtonY		= (rbExists)? parseInt(this.$btRetract.css('top')) : this.panelTopSubHeight;
+     this.topMenuWidth			= parseInt(this.$topMenuSubContainer.width()); // width of horisontal top menu
+     this.logoSmallWidth		= (this.$logoSmall.length) ? (parseInt(this.$logoSmall.offset().left) + parseInt(this.$logoSmall.width())) : 0; // width of small logo (shown to the left of horisontal menu when top panel is minimized)
+     this.miniMenuButton_origX = parseInt(this.$miniMenuButton.css('left')); // original left coordinate
+     this.topMenuY				= (this.$topMenuSubContainer.length) ? this.$topMenuSubContainer.position().top : 0; // y-coordinate of the menu, also used to calculate the area that stays visible when menu is minimized
+     this.panelTopMain_Minimized = this.alwaysMinimizeMenu; // true when top container is retracted (reduced to minimum height)
+     
+     if (this.alwaysMinimizeMenu) {
+       this.retractContainer(true, false, true);
+     }
+     
+   },
+      
+     
+   topMenuInit:function() {
+     
+     this.$autoMenu.find('.BaseDiv').attr('onclick', ''); // remove javascript click handler
+     var $divToClone =this.$autoMenu.find('.BaseDiv.OEWELink').children('div'); // clone the sample item's Content for each link
+     if ($divToClone.length === 1) { // only if one item, no changes by user
+       
+       var origID = $divToClone.attr('id'), cntr = 0;
+       this.$topMenuLinks.find('a').each(function(){ // attention for link elements to be in correct order! (should be the case with openElement unless some links are a little above others)
+         cntr += 1;
+         var href = $(this).attr('href'), html = $(this).html();
+         var $copy = $divToClone.clone();
+         $copy.css('white-space', 'nowrap').find('a').attr('href', href).html(html);
+         $copy.appendTo($divToClone.parent());
+         $copy.hover(function(){$(this).addClass('OE_Over');}, function(){$(this).removeClass('OE_Over');});
+       });
+       $divToClone.remove();
+       
+     } 
+     
+     this.autoMenuHeight = this.$autoMenu.height();
+   },
+   
+     
+   eventHandlers: function() {
+   
+     // on window resize (and always at the beginning): //
+     $(window).bind('load resize', function(){ WECB_Cent01_TopContainer.onResizeWindow(); }).trigger('resize');
+     
+     // on page scroll: //
+     this.smallLogoVisibility();
+     this.onScrollWindow(); // always call in the beginning
+     $(window).scroll(function(){ WECB_Cent01_TopContainer.onScrollWindow(); });
+     
+     // Menu links and Anchors - smooth scroll to an anchor: //
+     $('a').click(function(){
+         if (WECB_Cent01_TopContainer.autoMenuVisible) { WECB_Cent01_TopContainer.openAutoMenu(false); }
+         var target = $(this).attr('href');
+         if (target && target.indexOf('#') === 0 && target.length >= 2 && $(target).length) { // link to an anchor on this page
+           WECB_Cent01_General.smoothScrollTo($(target).offset().top);
+           return false; // cancel default link behavior
+         }
+     });
+   
+   },
+   
+     
+   buttons: function() {
+   
+     // button Retract that minimizes/maximises top panel: //
+     
+     if (this.$btRetract.length) { // retract button (one with small arrow at the bottom-center)
+       this.$btRetract.find('a').attr('href', '').css('display', 'none'); // hide <a>
+       this.$btRetract.click(function(){
+         if (WECB_Cent01_TopContainer.autoMenuVisible)
+           WECB_Cent01_TopContainer.openAutoMenu(false); // hide automenu on retract button click
+         else
+           WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized); // change state
+       });
+     }
+     
+   
+     this.$miniMenuButton.click(function(){ // open automenu
+       if (!WECB_Cent01_TopContainer.autoMenuVisible) WECB_Cent01_TopContainer.openAutoMenu(true);
+       return false;
+     });
+   
+     $('.closeMenu').click(function(){ // close automenu
+       if (WECB_Cent01_TopContainer.autoMenuVisible) WECB_Cent01_TopContainer.openAutoMenu(false);
+       return false;
+     });
+     
+     
+     // Buttons-navigation arrows: scroll to next or previous section (anchor) //
+     
+     $('.navigArrow, .navigArrow2').click(function() {
+       var currY = parseInt($(document).scrollTop()); // current offset
+       var isUp = $(this).hasClass('naUp'); // arrow Up
+       
+       // among all the anchors on the page, seach the closest one in the chosen direction:
+       var newY = currY; // where to scroll
+       WECB_Cent01_General.$anchors.each(function(){ // find closest anchor, and scroll to it
+         var yy = $(this).offset().top;
+         if (!isUp) { // Down one section
+           if (yy > currY + 40 && (newY === currY || newY > yy)) { newY = yy; }
+         } else { // Up one section
+           if (yy < currY      && (newY === currY || newY < yy)) { newY = yy; }
+         }
+         
+       });
+       if (newY != currY) WECB_Cent01_General.smoothScrollTo(newY);
+     });
+     
+   },
+   
+     
+   openAutoMenu: function(open) {
+     var $menu = this.$autoMenu;
+     var $container = this.$panelTopMain; //top container
+     if (open !== true) {
+       $menu.hide(500);
+       this.autoMenuVisible = false;
+     } else {
+       $menu.show(500);
+       this.autoMenuVisible = true;
+     }
+     
+     this.retractContainer(); // update top container display
+     this.menuModeControl();
+   },
+   
+    
+   retractContainer: function(reduce, autoMenu, noAnimation) { // retract/minimize or show/maximize top container
+     if (reduce === undefined)		reduce = this.panelTopMain_Minimized;
+     if (this.alwaysMinimizeMenu)	reduce = true;
+     if (autoMenu === undefined)	autoMenu = this.autoMenuVisible; // whether automenu is active atm
+     
+     var $container	= this.$panelTopMain; // container to animate
+     var newTop		= (reduce) ? -this.topMenuY : 0;
+     var currTop		= parseInt($container.css('top'));
+   
+     // change small arrow's direction, by showing the corresponding part of background image:
+     if (!this.alwaysMinimizeMenu) {
+       var bg_pos = (reduce && !autoMenu) ? 'center bottom' : 'center top'; // choose arrow direction
+       // if (autoMenu) { bg_pos = 'center center'; } // show "X" instead of arrow
+       this.$btRetract.css('background-position', bg_pos); // shift background image
+     }
+     
+     if (!autoMenu) {
+   	if (currTop > 0) 
+   		{ $container.stop().css('top', 0); }
+     
+     } else { // automenu is present
+       var $menu = this.$autoMenu;
+       var autoMenuHeight	= (this.autoMenuHeight) ? this.autoMenuHeight : parseInt($menu.height());
+       var autoMenuTop		= this.retractButtonY - autoMenuHeight;
+       $menu.css('top', autoMenuTop+'px'); // shift menu so that its bottom gets just above horisontal menu
+       
+       newTop = -autoMenuTop; // slide top container so that automenu top is at 0
+     }
+     
+     this.panelTopMain_Minimized = reduce; // store state
+     
+     $container.stop().animate({ top: newTop }, (noAnimation) ? 0 : 500, function(){WECB_Cent01_TopContainer.smallLogoVisibility();}); // at the end of animation, show or hide small logo
+     if (!reduce) this.smallLogoVisibility(); // additionally, when opening container, hide minilogo immediately  
+     
+   },
+   
+     
+   smallLogoVisibility: function(){
+     if (!this.InitOk) return;
+     // show or hide small logo depending on situation, and shift minimenu button according to its visibility
+     this.$logoSmall.toggle(this.panelTopMain_Minimized); 
+     this.$logoBig.toggle(!this.panelTopMain_Minimized && !this.autoMenuVisible); 
+     this.menuModeControl();
+   },
+   
+   
+   menuModeControl: function(){ // if page width is less than menu width, minimize the menu
+     
+     if (this.autoMenuVisible) { // if automenu is visible, hide normal menu and mini button
+   	this.$topMenuSubContainer.hide();
+       this.$miniMenuButton.hide();
+       return;
+     }
+     
+     var topContainerWd = parseInt(this.$panelTopMain.width()); // current width of parent container
+     // if small logo is visible, consider its width
+     if (this.panelTopMain_Minimized) 
+       topContainerWd -= (this.logoSmallWidth)*
+         ((this.topMenuAlignRight) ? 1 : 2);
+     var minimize = (topContainerWd < this.topMenuWidth + 8); // whether need to minimize the menu
+     
+     if (minimize) {
+   	this.$topMenuSubContainer.hide();
+       this.$miniMenuButton.show();
+     } else {
+       this.$topMenuSubContainer.show();
+       this.$miniMenuButton.hide();
+     }
+   },
+     
+   
+   
+     
+   onScrollWindow: function(){
+     if (!this.InitOk) return;
+     
+     var currY = parseInt($(document).scrollTop());
+     var needRetract = (currY > 0);
+     
+     var retracted = this.panelTopMain_Minimized;
+     if (needRetract !== retracted) {
+       this.retractContainer(!retracted);
+     }
+     
+     // visibility of navigation arrows (2 arrows at the bottom-right and 2 in the center):
+     var hideUp	= (currY-40 < WECB_Cent01_General.anchorMinY 						|| WECB_Cent01_General.anchorMaxY < 0);
+     var hideDown	= (currY-80+WECB_Cent01_General.displayHeight > WECB_Cent01_General.anchorMaxY 	|| WECB_Cent01_General.anchorMaxY < 0);
+   
+     this.navArrowUpCentVisible	= WECB_Cent01_General.changeVisibility(this.$navArrowUpCent, this.navArrowUpCentVisible, !hideUp && !this.disableCenterArrows);
+     this.navArrowUpVisible		= WECB_Cent01_General.changeVisibility(this.$navArrowUp, this.navArrowUpVisible, !hideUp);
+   
+     this.navArrowDownCentVisible	= WECB_Cent01_General.changeVisibility(this.$navArrowDownCent, this.navArrowDownCentVisible, !hideDown && !this.disableCenterArrows);
+     this.navArrowDownVisible		= WECB_Cent01_General.changeVisibility(this.$navArrowDown, this.navArrowDownVisible, !hideDown);
+   },
+   
+   
+   onResizeWindow: function(){
+     WECB_Cent01_General.displayHeight = $(window).height();
+     if (!this.InitOk) return;
+     
+     this.disableCenterArrows = (WECB_Cent01_General.displayHeight < 640);
+     this.menuModeControl();
+   
+     var oldY = parseInt($(document).scrollTop());
+     var oldPageHeight = $(document).height();
+     WECB_Cent01_General.resizeSectionContainers();  
+     var newY = parseInt($(document).scrollTop());
+     // try to keep the page showing the same content even when containers resize:
+     if (newY == oldY) {
+       var newPageHeight = $(document).height();
+       if (oldPageHeight && newPageHeight && newPageHeight != oldPageHeight) {
+         var relHeight = newPageHeight/oldPageHeight;
+         newY = parseInt(newY + (newY/newPageHeight)*(newPageHeight-oldPageHeight)*40);
+       }
+     }
+   
+     WECB_Cent01_General.updateAnchorsMinMaxY();
+     this.onScrollWindow();
+   
+   }
+   
+     
+   };
+  </script>
+  <!-- Activate carefully - doesn't work that well: meta name="viewport" content="width=device-width;" initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no; / -->
+ </head>
+ <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RBoth OEPageXbody OESK_XBody_Default" style="z-index:0">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTAbs">
+     <div id="WEbce67b3c89" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1">
+      <div class="OESZ OESZ_DivContent OESZG_WEbce67b3c89">
+       <span class="ContentBox">This layer is not inherited by any page. It&nbsp;contains non-mimimized versions of scripts.</span>
+      </div>
+     </div>
+    </div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs"></div>
+   </div>
+  </div>
+ </body>
+</html>
