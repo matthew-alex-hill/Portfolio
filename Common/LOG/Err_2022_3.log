@@ -1,0 +1,468 @@
+3/16/2022 5:49:53 PM | 
+3/16/2022 5:49:53 PM | 
+Message : The process cannot access the file 'C:\Users\Matthew\AppData\Local\Temp\openElement\bc9bfdb7-2805-4a1c-ac40-266ca699d9c6\LinkFile\y5orplei.5sh.png' because it is being used by another process.
+3/16/2022 5:49:53 PM | 
+LastTrace : openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError)
+3/16/2022 5:49:53 PM | 
+Params : 
+3/16/2022 5:49:53 PM | 
+MethodeName : Void WinIOError(Int32, System.String)
+3/16/2022 5:49:53 PM | 
+Stamp : 3/16/2022 5:49:53 PM
+3/16/2022 5:49:53 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:49:53 PM | 
+AvailablePhysicalMemory : 2.29 Go 
+3/16/2022 5:49:53 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:49:53 PM | 
+AvailableVirtualMemory : 2.89 Go 
+3/16/2022 5:49:53 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:49:53 PM | 
+WorkingSet : 456.2 Mo 
+3/16/2022 5:49:53 PM | 
+PagedMemorySize : 372.64 Mo 
+3/16/2022 5:49:53 PM | 
+TotalMemory : 64.18 Mo 
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+ExTrace : 
+3/16/2022 5:49:53 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 150
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+OETrace : 
+3/16/2022 5:49:53 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 180
+3/16/2022 5:49:53 PM | 
+at openElement.Tools.Picture.OpenBitmap2(String filePath, PictureResizeConfig resizeConfig, String groupName, String element, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Tools\ToolsPicture.vb:line 109
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 356
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 737
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 822
+3/16/2022 5:49:53 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:49:53 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:49:53 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:49:53 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+------------------
+3/16/2022 5:49:53 PM | 
+3/16/2022 5:49:53 PM | 
+Message : Object reference not set to an instance of an object.
+3/16/2022 5:49:53 PM | 
+LastTrace : openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj)
+3/16/2022 5:49:53 PM | 
+Params : 
+3/16/2022 5:49:53 PM | 
+MethodeName : System.Object[] CreateDataRow(System.Object)
+3/16/2022 5:49:53 PM | 
+Stamp : 3/16/2022 5:49:53 PM
+3/16/2022 5:49:53 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:49:53 PM | 
+AvailablePhysicalMemory : 2.29 Go 
+3/16/2022 5:49:53 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:49:53 PM | 
+AvailableVirtualMemory : 2.89 Go 
+3/16/2022 5:49:53 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:49:53 PM | 
+WorkingSet : 456.23 Mo 
+3/16/2022 5:49:53 PM | 
+PagedMemorySize : 372.66 Mo 
+3/16/2022 5:49:53 PM | 
+TotalMemory : 64.65 Mo 
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+ExTrace : 
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 358
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 735
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 821
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+OETrace : 
+3/16/2022 5:49:53 PM | 
+at openElement.My.MyApplication.MyApplication_UnhandledException(Object sender, UnhandledExceptionEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\ApplicationEvents.vb:line 93
+3/16/2022 5:49:53 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:49:53 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:49:53 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:49:53 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:49:53 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:49:53 PM | 
+
+3/16/2022 5:49:53 PM | 
+------------------
+3/16/2022 5:51:28 PM | 
+3/16/2022 5:51:28 PM | 
+Message : Object reference not set to an instance of an object.
+3/16/2022 5:51:28 PM | 
+LastTrace : openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj)
+3/16/2022 5:51:28 PM | 
+Params : 
+3/16/2022 5:51:28 PM | 
+MethodeName : System.Object[] CreateDataRow(System.Object)
+3/16/2022 5:51:28 PM | 
+Stamp : 3/16/2022 5:51:28 PM
+3/16/2022 5:51:28 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:51:28 PM | 
+AvailablePhysicalMemory : 2.38 Go 
+3/16/2022 5:51:28 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:51:28 PM | 
+AvailableVirtualMemory : 2.91 Go 
+3/16/2022 5:51:28 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:51:28 PM | 
+WorkingSet : 443.18 Mo 
+3/16/2022 5:51:28 PM | 
+PagedMemorySize : 357.79 Mo 
+3/16/2022 5:51:28 PM | 
+TotalMemory : 65.39 Mo 
+3/16/2022 5:51:28 PM | 
+
+3/16/2022 5:51:28 PM | 
+ExTrace : 
+3/16/2022 5:51:28 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 358
+3/16/2022 5:51:28 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:51:28 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 735
+3/16/2022 5:51:28 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 821
+3/16/2022 5:51:28 PM | 
+
+3/16/2022 5:51:28 PM | 
+OETrace : 
+3/16/2022 5:51:28 PM | 
+at openElement.My.MyApplication.MyApplication_UnhandledException(Object sender, UnhandledExceptionEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\ApplicationEvents.vb:line 98
+3/16/2022 5:51:28 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:51:28 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:51:28 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:51:28 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:51:28 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:51:28 PM | 
+
+3/16/2022 5:51:28 PM | 
+------------------
+3/16/2022 5:54:32 PM | 
+3/16/2022 5:54:32 PM | 
+Message : The process cannot access the file 'C:\Users\Matthew\AppData\Local\Temp\openElement\bc9bfdb7-2805-4a1c-ac40-266ca699d9c6\LinkFile\b0bmupjm.f05.png' because it is being used by another process.
+3/16/2022 5:54:32 PM | 
+LastTrace : openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError)
+3/16/2022 5:54:32 PM | 
+Params : 
+3/16/2022 5:54:32 PM | 
+MethodeName : Void WinIOError(Int32, System.String)
+3/16/2022 5:54:32 PM | 
+Stamp : 3/16/2022 5:54:32 PM
+3/16/2022 5:54:32 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:54:32 PM | 
+AvailablePhysicalMemory : 2.33 Go 
+3/16/2022 5:54:32 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:54:32 PM | 
+AvailableVirtualMemory : 2.96 Go 
+3/16/2022 5:54:32 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:54:32 PM | 
+WorkingSet : 421.87 Mo 
+3/16/2022 5:54:32 PM | 
+PagedMemorySize : 342.96 Mo 
+3/16/2022 5:54:32 PM | 
+TotalMemory : 60.9 Mo 
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+ExTrace : 
+3/16/2022 5:54:32 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 150
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+OETrace : 
+3/16/2022 5:54:32 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 180
+3/16/2022 5:54:32 PM | 
+at openElement.Tools.Picture.OpenBitmap2(String filePath, PictureResizeConfig resizeConfig, String groupName, String element, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Tools\ToolsPicture.vb:line 109
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 356
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 737
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 822
+3/16/2022 5:54:32 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:54:32 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:54:32 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:54:32 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+------------------
+3/16/2022 5:54:32 PM | 
+3/16/2022 5:54:32 PM | 
+Message : Object reference not set to an instance of an object.
+3/16/2022 5:54:32 PM | 
+LastTrace : openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj)
+3/16/2022 5:54:32 PM | 
+Params : 
+3/16/2022 5:54:32 PM | 
+MethodeName : System.Object[] CreateDataRow(System.Object)
+3/16/2022 5:54:32 PM | 
+Stamp : 3/16/2022 5:54:32 PM
+3/16/2022 5:54:32 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:54:32 PM | 
+AvailablePhysicalMemory : 2.33 Go 
+3/16/2022 5:54:32 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:54:32 PM | 
+AvailableVirtualMemory : 2.96 Go 
+3/16/2022 5:54:32 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:54:32 PM | 
+WorkingSet : 421.9 Mo 
+3/16/2022 5:54:32 PM | 
+PagedMemorySize : 342.98 Mo 
+3/16/2022 5:54:32 PM | 
+TotalMemory : 61.37 Mo 
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+ExTrace : 
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 358
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 735
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 821
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+OETrace : 
+3/16/2022 5:54:32 PM | 
+at openElement.My.MyApplication.MyApplication_UnhandledException(Object sender, UnhandledExceptionEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\ApplicationEvents.vb:line 93
+3/16/2022 5:54:32 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:54:32 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:54:32 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:54:32 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:54:32 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:54:32 PM | 
+
+3/16/2022 5:54:32 PM | 
+------------------
+3/16/2022 5:54:38 PM | 
+3/16/2022 5:54:38 PM | 
+Message : Object reference not set to an instance of an object.
+3/16/2022 5:54:38 PM | 
+LastTrace : openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj)
+3/16/2022 5:54:38 PM | 
+Params : 
+3/16/2022 5:54:38 PM | 
+MethodeName : System.Object[] CreateDataRow(System.Object)
+3/16/2022 5:54:38 PM | 
+Stamp : 3/16/2022 5:54:38 PM
+3/16/2022 5:54:38 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 5:54:38 PM | 
+AvailablePhysicalMemory : 2.33 Go 
+3/16/2022 5:54:38 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 5:54:38 PM | 
+AvailableVirtualMemory : 2.97 Go 
+3/16/2022 5:54:38 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 5:54:38 PM | 
+WorkingSet : 411.49 Mo 
+3/16/2022 5:54:38 PM | 
+PagedMemorySize : 329.27 Mo 
+3/16/2022 5:54:38 PM | 
+TotalMemory : 62.6 Mo 
+3/16/2022 5:54:38 PM | 
+
+3/16/2022 5:54:38 PM | 
+ExTrace : 
+3/16/2022 5:54:38 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateDataRow(Object obj) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 358
+3/16/2022 5:54:38 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.CreateRow(Object parentObj, Object parentListOf, Object obj, TreeListNode parentNode) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 484
+3/16/2022 5:54:38 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.AddNode(AddButton addButton) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 735
+3/16/2022 5:54:38 PM | 
+at openElement.WebElement.Editors.Control.CtlEditListOf.BBIAddItem_ItemClick(Object sender, ItemClickEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\Control\CtlEditListOf.vb:line 821
+3/16/2022 5:54:38 PM | 
+
+3/16/2022 5:54:38 PM | 
+OETrace : 
+3/16/2022 5:54:38 PM | 
+at openElement.My.MyApplication.MyApplication_UnhandledException(Object sender, UnhandledExceptionEventArgs e) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\ApplicationEvents.vb:line 98
+3/16/2022 5:54:38 PM | 
+at openElement.ElementEditorService.ShowDialog(Form dialog) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 27
+3/16/2022 5:54:38 PM | 
+at openElement.WebElement.Editors.UITypeEditListOf.EditValue(ITypeDescriptorContext context, IServiceProvider provider, Object value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\Editors\UITypeEditListOf.vb:line 37
+3/16/2022 5:54:38 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 44
+3/16/2022 5:54:38 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 5:54:38 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 5:54:38 PM | 
+
+3/16/2022 5:54:38 PM | 
+------------------
+3/16/2022 6:00:29 PM | 
+3/16/2022 6:00:29 PM | 
+Message : The process cannot access the file 'C:\Users\Matthew\AppData\Local\Temp\openElement\bc9bfdb7-2805-4a1c-ac40-266ca699d9c6\LinkFile\aiicw5ge.nck.png' because it is being used by another process.
+3/16/2022 6:00:29 PM | 
+LastTrace : openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError)
+3/16/2022 6:00:29 PM | 
+Params : 
+3/16/2022 6:00:29 PM | 
+MethodeName : Void WinIOError(Int32, System.String)
+3/16/2022 6:00:29 PM | 
+Stamp : 3/16/2022 6:00:28 PM
+3/16/2022 6:00:29 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 6:00:29 PM | 
+AvailablePhysicalMemory : 2.33 Go 
+3/16/2022 6:00:29 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 6:00:29 PM | 
+AvailableVirtualMemory : 2.94 Go 
+3/16/2022 6:00:29 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 6:00:29 PM | 
+WorkingSet : 448.89 Mo 
+3/16/2022 6:00:29 PM | 
+PagedMemorySize : 367.66 Mo 
+3/16/2022 6:00:29 PM | 
+TotalMemory : 78.06 Mo 
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+ExTrace : 
+3/16/2022 6:00:29 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 150
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+OETrace : 
+3/16/2022 6:00:29 PM | 
+at openElement.OBitmap.LoadBitmap(FileInfo fileInfo, PictureResizeConfig resizeConfig, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OBitmap.vb:line 180
+3/16/2022 6:00:29 PM | 
+at openElement.Tools.Picture.OpenBitmap2(String filePath, PictureResizeConfig resizeConfig, String groupName, String element, Boolean showLoadError) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Tools\ToolsPicture.vb:line 109
+3/16/2022 6:00:29 PM | 
+at openElement.WebElement.DataType.GalleryImages.Resize(ElementBase element, PictureResizeConfig resizeConfig1, PictureResizeConfig resizeConfig2, PictureResizeConfig resizeConfig3, Boolean resizeAllPictures) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\WebElement\DataType\GalleryImages.vb:line 212
+3/16/2022 6:00:29 PM | 
+at WebElement.Elements.Media.WEGalleryCarrousel2.ResizeImage(Int32 newImageWidth) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\Elements\WECommon\Media\WEGalleryCarrousel2.vb:line 965
+3/16/2022 6:00:29 PM | 
+at WebElement.Elements.Media.WEGalleryCarrousel2.set_ImagesList(GalleryImages value) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\Elements\WECommon\Media\WEGalleryCarrousel2.vb:line 275
+3/16/2022 6:00:29 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 50
+3/16/2022 6:00:29 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 6:00:29 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+------------------
+3/16/2022 6:00:29 PM | 
+3/16/2022 6:00:29 PM | 
+Message : Object reference not set to an instance of an object.
+3/16/2022 6:00:29 PM | 
+LastTrace : openElement.ElementEditorService.OpenProperty(String propertyName)
+3/16/2022 6:00:29 PM | 
+Params : 
+3/16/2022 6:00:29 PM | 
+MethodeName : Void SetValue(System.Object, System.Object)
+3/16/2022 6:00:29 PM | 
+Stamp : 3/16/2022 6:00:29 PM
+3/16/2022 6:00:29 PM | 
+OSFullName : Microsoft Windows 10 Home
+3/16/2022 6:00:29 PM | 
+AvailablePhysicalMemory : 2.33 Go 
+3/16/2022 6:00:29 PM | 
+TotalPhysicalMemory : 7.82 Go 
+3/16/2022 6:00:29 PM | 
+AvailableVirtualMemory : 2.94 Go 
+3/16/2022 6:00:29 PM | 
+TotalVirtualMemory : 4 Go 
+3/16/2022 6:00:29 PM | 
+WorkingSet : 448.95 Mo 
+3/16/2022 6:00:29 PM | 
+PagedMemorySize : 367.69 Mo 
+3/16/2022 6:00:29 PM | 
+TotalMemory : 74.48 Mo 
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+ExTrace : 
+3/16/2022 6:00:29 PM | 
+at openElement.ElementEditorService.OpenProperty(String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\ElementEditorService.vb:line 49
+3/16/2022 6:00:29 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 822
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+OETrace : 
+3/16/2022 6:00:29 PM | 
+at openElement.Forms.PageEditFromJs.TrapError(Exception ex, String infosParams) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 32
+3/16/2022 6:00:29 PM | 
+at openElement.Forms.PageEditFromJs._OpenSortProperty(String id, String propertyName) in C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\Page\PageEditFromJs.vb:line 831
+3/16/2022 6:00:29 PM | 
+at openElement.My.MyApplication.Main(String[] Args) in :line 82
+3/16/2022 6:00:29 PM | 
+
+3/16/2022 6:00:29 PM | 
+------------------
